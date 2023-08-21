@@ -1,0 +1,6 @@
+Colors:
+Bone White = #F9F6EE - rgb(249, 246, 238)
+Eletric Purple = #9900ff - rgb(153, 0, 255)
+Royal Health = #a64d79 - rgb(166, 77, 121)
+Dark Red = #0d0d0d - rgb(13, 13, 13)
+Black Metal = #0B0F0F - rgb(11, 15, 15)
