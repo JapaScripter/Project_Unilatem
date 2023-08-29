@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- =====Head===== -->
+  <head>
+    <!-- =====Meta Config.===== -->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="JMJ Vidraçaria">
+    <meta name="author" content="Unilatem">
+    <!-- =====Meta Config.===== -->
+
+    <!-- =====Title Tab===== -->
+    <title>Teste</title>
+    <!-- =====Title Tab===== -->
+
+    <!-- =====CSS Import===== -->
+		<link type="text/css" rel="stylesheet" href="/style.css">
+		<!-- =====CSS Import===== -->
+
+		<!-- =====CSS Inside===== -->
+		<style>
+		</style>
+		<!-- =====CSS Inside===== -->
+
+    <!-- =====JS Inside===== -->
+    <script>
+      fetch("/templates/header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("/templates/footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!-- =====JS Inside===== -->
+  </head>
+  <body>
+    <!-- =====Main===== -->
+    <main>
+      <header></header>
+
+      
+
+      <footer></footer>
+    </main>
+    <!-- =====Main===== -->
+
+    <!-- =====Script Import===== -->
+    <script src="script.js"></script>
+    <!-- =====Script Import===== -->
+
+    <!-- =====Script Inside===== -->
+    <script></script>
+    <!-- =====Script Inside===== -->
+  </body>
+</html>
