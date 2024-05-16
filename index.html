@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Unilatem">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>Unilatem</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS|-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="aos.css">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css'>
+    <!--|CSS|-->
+
+    <!--|Script Header and Footer Import|-->
+		<script>
+      fetch("header.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("header").innerHTML = data;
+        });
+      fetch("footer.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+    <!--|Script Header and Footer Import|-->
+
+    <!--|Animation|-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+      });
+    </script>
+    <!--|Animation|-->
+  </head>
+  <body>
+
+  <!--|Header|-->
+  <header></header>
+  <!--|Header|-->
+
+  <!--|Main|-->
+  <section id="scanime">
+    <div id="particles-background" class="vertical-centered-box"></div>
+    <div id="particles-foreground" class="vertical-centered-box"></div>
+  </section>
+  <section id="sc1">
+    <div class="dv1">
+      <h1 class="tt1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="0">Você sonha<br><br>Nós realizamos</h1>
+      <a class="bt1" href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20saber%20mais%20dos%20valores%20para%20poder%20fazer%20um%20site%2C%20poderia%20orçar%20para%20mim?" target="_blank" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="2000" data-aos-offset="0">Realizar Meu Sonho</a>
+    </div>
+    <div class="dv1">
+      <img class="im1" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" src="images/hero.png">
+    </div>
+  </section>
+  <section id="sc2">
+    <div class="dv2">
+      <video class="vd1" width="640" height="360" autoplay muted loop data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
+        <source src="images/1.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+    <div class="dv2">
+      <h1 class="tt2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">Unilatem onde seu sonho é possível!</h1>
+      <p class="tx2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="0">A Unilatem é única, especializada na criação de sites e landing pages personalizadas para empresas que desejam aumentar sua visibilidade, atrair novos clientes e se destacar no mercado. Através do design inovador e funcionalidade eficaz, ajudamos nossos clientes a ter uma presença online única e renovada.</p>
+    </div>
+  </section>
+  <section id="sc3">
+    <h1 class="tt3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">Parceiros</h1>
+    <div class="slider" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="0">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="images/bfconsultoria.png" alt="brand-number-one-1" height="60" width="150" style="padding-top:1.5vw"/>
+        </div>
+        <div class="slide">
+          <img src="images/bfsaude.png" height="100" width="100" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/takewood.png" height="100" width="100" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/eklesia.png" height="50" width="250" style="padding-top:2vw" />
+        </div>
+        <div class="slide">
+          <img src="images/bfconsultoria.png" height="60" width="150" style="padding-top:1.5vw"/>
+        </div>
+        <div class="slide">
+          <img src="images/bfsaude.png" height="100" width="100" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/takewood.png" height="100" width="100" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/eklesia.png" height="50" width="250" style="padding-top:2vw" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sc4">
+    <div class="dv4" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-in-out">
+      <div class="dv5">
+        <h1 class="tt4">Fale Conosco</h1>
+        <p class="tx4">Av. Dr. Francisco Mesquita, 1000<br>Jardim Ibitirama, São Paulo - SP - CEP 03153-001<br><br>ESPAÇO COWORKING - Local: Praça de Eventos<br><br>Seg à Sex das 11:00AM às 16:00PM</p>
+        <p class="tx4"><a class="tx41" href="tel:+5511949147702">Telefone: +55 (11) 9 4914-7702</a></p>
+      </div>
+      <div class="dv6">
+        <h1 class="tt4" >Segue a gente!</h1>
+        <div class="dv7">
+          <a href="https://www.linkedin.com/in/yuri-yoshi-2272442ba/" target="_blank"><img class="im4" data-aos="flip-down" data-aos-duration="1500" src="images/linkedin.svg"></a>
+          <a href="https://www.instagram.com/unilatem/" target="_blank"><img class="im4" data-aos="flip-down" data-aos-duration="2000" src="images/instagram.svg"></a>  
+          <a href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20saber%20mais%20dos%20valores%20para%20poder%20fazer%20um%20site%2C%20poderia%20orçar%20para%20mim?" target="_blank"><img class="im4" data-aos="flip-down" data-aos-duration="2500" src="images/whatsapp.svg"></a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <iframe class="im41" data-aos="zoom-out" data-aos-duration="3000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2963586018436!2d-46.58772982531008!3d-23.593702162779902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dc5bd1fdc09%3A0xa2d70e831a4710b8!2sCentral%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1715882992721!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+    </div>
+  </section>
+  <!--|Main|-->
+
+  <!--|Footer|-->
+  <footer></footer>
+  <!--|Footer|-->
+
+  <!--|Script|-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+  <script  src="./script.js"></script>
+  <script src="aos.js" rel="text/javascript"></script>
+  <!--|Script|-->
+  </body>
+</html>
