@@ -235,7 +235,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 /*--|SC1 CONFIGURATIONS|--*/
 
 /*--|SC2 CONFIGURATIONS|--*/
-#sc2{
+.sc2{
 /*display*/
 display:flex;
 width:100%;
@@ -380,7 +380,7 @@ align-items:flex-start;
 /*--|SC3 CONFIGURATIONS|--*/
 
 /*--|SC4 CONFIGURATIONS|--*/
-#sc4{
+.sc4{
 /*display*/
 display:flex;
 width:100%;
