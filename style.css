@@ -43,7 +43,7 @@ animation: rotate 1s ease-in-out infinite;
 list-style-type:none;
 /*display*/
 display:flex;
-width:30%;
+width:40%;
 justify-content:space-evenly;
 align-items:flex-end;
 }
@@ -187,7 +187,7 @@ align-items:center;
 .tt1{
 /*font*/
 font-family:'digital';
-font-size:4vw;
+font-size:3vw;
 text-align:left;
 letter-spacing:0.5vw;
 color:#F0F0F0;
