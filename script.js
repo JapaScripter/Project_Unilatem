@@ -1,27 +1,3 @@
-const slides = document.querySelectorAll('.carousel-slide');
-const totalSlides = slides.length;
-let currentIndex = 0;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
-    });
-}
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
-}
-
-// Muda o slide a cada 5 segundos
-setInterval(nextSlide, 10000);
-
-// Inicializa o carrossel com o slide atual
-showSlide(currentIndex);
-
 document.addEventListener('DOMContentLoaded', function() {
     var menuList = document.getElementById('lsm');
     menuList.style.display = 'none';
