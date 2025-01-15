@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Unilatem">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>Casamento</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS|-->
+    <link rel="stylesheet" href="stylecasamento.css">
+    <!--|CSS|-->
+
+    <!--|Animation|-->
+    <script>document.addEventListener("DOMContentLoaded",(function(){AOS.init()}));</script>
+    <!--|Animation|-->
+  </head>
+  <body>
+    <section class="sec3">
+      <h2 class="sec3_tt1">Preencha os dados para podermos enviar esse presentão que você escolheu!!!</h2>
+      <form id="form-compra" action="https://formspree.io/f/mvgglqwl" method="POST">
+        <label>Seu Nome:<input type="text" name="nome"></label>
+        <label for="produto">Seu Presente:<input type="text" id="produto" name="produto" readonly></label>
+        <label for="valor">Valor:<input type="text" id="valor" name="valor" readonly></label>
+        <label>Deixe sua mensagem!!!:<textarea name="message"></textarea></label>
+
+        <button type="submit">Presentear</button>
+      </form>
+    </section>
+
+    <!--|Script|-->
+    <script>
+      // Captura todos os produtos
+      const produtos = document.querySelectorAll('.produto');
+
+      // Adiciona um evento de clique em cada produto
+      produtos.forEach(produto => {
+        produto.addEventListener('click', function() {
+          // Pega o nome e o valor do produto a partir dos atributos data
+          const nomeProduto = produto.getAttribute('data-nome');
+          const valorProduto = produto.getAttribute('data-valor');
+          
+          // Preenche o formulário com os dados do produto
+          document.getElementById('produto').value = nomeProduto;
+          document.getElementById('valor').value = valorProduto;
+        });
+      });
+    </script>
+    <!--|Script|-->
+  </body>
+</html>

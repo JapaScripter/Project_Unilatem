@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--|Meta Config.|-->
+    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="Unilatem">
+    <meta name="author" content="Unilatem">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--|Meta Config.|-->
+
+    <!--|Title Tab|-->
+    <title>Casamento</title>
+    <!--|Title Tab|-->
+
+    <!--|CSS|-->
+    <link rel="stylesheet" href="stylecasamento.css">
+    <!--|CSS|-->
+
+    <!--|Animation|-->
+    <script>document.addEventListener("DOMContentLoaded",(function(){AOS.init()}));</script>
+    <!--|Animation|-->
+  </head>
+  <body>
+    <section class="sc1">
+      <h2 class="sc1tt">Faça parte dessa data especial</h2>
+    </section>
+    <section class="sc2">
+      <div class="ProductCard1" data-nome="Produto 1" data-valor="R$ 100,00">
+        <img class="ProductCard1_Img" src="produto1.jpg" alt="Produto 1">
+        <p class="ProductCard1_Name"></p>
+        <p class="ProductCard1_Price">Valor:</p>
+        <a href="#" class="presentear">Presentear</a>
+      </div>
+      <div class="ProductCard2" data-nome="Produto 2" data-valor="R$ 200,00">
+        <img class="ProductCard2_Img" src="produto2.jpg" alt="Produto 2">
+        <p class="ProductCard2_Name"></p>
+        <p class="ProductCard2_Price">Valor:</p>
+        <a href="#" class="presentear">Presentear</a>
+      </div>
+      <div class="ProductCard3" data-nome="Produto 3" data-valor="R$ 300,00">
+        <img class="ProductCard3_Img" src="produto3.jpg" alt="Produto 3">
+        <p class="ProductCard3_Name"></p>
+        <p class="ProductCard3_Price">Valor:</p>
+        <a href="#" class="presentear">Presentear</a>
+      </div>
+      <div class="ProductCard4" data-nome="Produto 4" data-valor="R$ 400,00">
+        <img class="ProductCard4_Img" src="produto4.jpg" alt="Produto 4">
+        <p class="ProductCard4_Name"></p>
+        <p class="ProductCard4_Price">Valor:</p>
+        <a href="#" class="presentear">Presentear</a>
+      </div>
+      <div class="ProductCard5" data-nome="Produto 5" data-valor="R$ 500,00">
+        <img class="ProductCard5_Img" src="produto5.jpg" alt="Produto 5">
+        <p class="ProductCard5_Name"></p>
+        <p class="ProductCard5_Price">Valor:</p>
+        <a href="#" class="presentear">Presentear</a>
+      </div>
+    </section>
+    <footer></footer>
+
+    <!--|Script|-->
+    <script>
+      // Seleciona todos os links "Presentear"
+      const linksPresentear = document.querySelectorAll('.presentear');
+    
+      // Adiciona o evento de clique em cada link
+      linksPresentear.forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault(); // Evita o comportamento padrão de navegação
+    
+          // Pega os dados do produto (nome e valor) do elemento pai
+          const produto = link.parentElement;
+          const nomeProduto = produto.getAttribute('data-nome');
+          const valorProduto = produto.getAttribute('data-valor');
+    
+          // Armazena os dados no localStorage
+          localStorage.setItem('produto', nomeProduto);
+          localStorage.setItem('valor', valorProduto);
+    
+          // Redireciona para a página de pagamento
+          window.location.href = 'pagamento.html'; // Ajuste o caminho conforme necessário
+        });
+      });
+    </script>
+    <!--|Script|-->
+  </body>
+</html>
