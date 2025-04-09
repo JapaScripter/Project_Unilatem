@@ -15,9 +15,18 @@ app = Flask(__name__,
             template_folder='.',  # Arquivos HTML na raiz
             static_folder='assets')  # Arquivos estáticos (CSS, JS, etc.) na pasta "assets"
 
-# Cors com as rotas
-CORS(app, origins="https://www.unilatem.com") #ROTA PARA PRODUÇÃO
-# CORS(app, origins=["http://127.0.0.1:8000", "http://localhost:8000", "https://www.unilatem.com"]) ROTA PARA TESTE E DESENVOLVIMENTO
+# Defina seu domínio de produção
+PRODUCTION_DOMAIN = "https://www.unilatem.com"
+
+# Obtenha o ambiente onde o código está rodando
+env = os.getenv('FLASK_ENV', 'development')
+
+# Se estiver em produção, permita apenas o domínio de produção
+if env == 'production':
+    CORS(app, origins=PRODUCTION_DOMAIN)
+else:
+    # Durante o desenvolvimento, permita localhost e 127.0.0.1
+    CORS(app, origins=["http://127.0.0.1:8000", "http://localhost:8000", "https://www.unilatem.com"])
 
 # Função para enviar o e-mail
 def enviar_email(subject, body, email_receivers):
