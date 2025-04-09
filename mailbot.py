@@ -16,7 +16,7 @@ app = Flask(__name__,
             static_folder='assets')  # Arquivos estáticos (CSS, JS, etc.) na pasta "assets"
 
 # Cors com as rotas
-CORS(app, origins="https://unilatem.com") #ROTA PARA PRODUÇÃO
+CORS(app, origins="https://www.unilatem.com") #ROTA PARA PRODUÇÃO
 # CORS(app, origins=["http://127.0.0.1:8000", "http://localhost:8000", "https://www.unilatem.com"]) ROTA PARA TESTE E DESENVOLVIMENTO
 
 # Função para enviar o e-mail
