@@ -19,7 +19,10 @@ app = Flask(__name__,
 PRODUCTION_DOMAIN = "https://www.unilatem.com"
 
 # Obtenha o ambiente onde o código está rodando
-env = os.getenv('FLASK_ENV', 'development')
+if os.environ.get('FLASK_ENV') == 'production':
+    CORS(app, origins="https://www.unilatem.com")
+else:
+    CORS(app, origins=["http://localhost:3000", "http://127.0.0.1:3000"])
 
 # Se estiver em produção, permita apenas o domínio de produção
 if env == 'production':
