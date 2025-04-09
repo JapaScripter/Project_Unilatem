@@ -78,5 +78,8 @@ def pagamento_email():
 def serve_static(path):
     return send_from_directory('assets', path)
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8000)  # Certifique-se de que a porta seja 8000 em desenvolvimento
+# if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0', port=8000)  # Certifique-se de que a porta seja 8000 em TESTE E DESENVOLVIMENTO
+app.config['DEBUG'] = False #CÓDIGO PARA PRODUÇÃO
+
+
