@@ -1,1 +1,32 @@
-<header id=hd><div id=lg><a href=/ ><img src=images/logo.png class=lg></a></div><ul id=ls><li><a href=/ class=nv><img src=images/home.svg class=im>HOME</a><li><a href=#sobre class=nv><img src=images/sobre.svg class=im>SOBRE NÓS</a><li><a href=#contato class=nv><img src=images/contato.svg class=im>CONTATO</a><li><a href=/ class=nv><img src=images/fb.svg class=im>PT/BR</a><li><a href=EN/en.html class=nv><img src=images/fs.svg class=im>EN</a><li><a href=ES/es.html class=nv><img src=images/fe.svg class=im>ES</a></ul><div id=divhd onclick=toggleMenu()><img src=images/menumobile.svg id=mnm></div><ul id=lsm><div class=divclose><img src=images/close.svg id=mnm onclick=toggleoffMenu()></div><li><a href=/ class=nvls onclick=toggleoffMenu()>HOME<img src=images/home.svg class=imls></a><li><a href=#sobre class=nvls onclick=toggleoffMenu()>SOBRE NÓS<img src=images/sobre.svg class=imls></a><li><a href=#contato class=nvls onclick=toggleoffMenu()>CONTATO<img src=images/contato.svg class=imls></a><li><a href=/ class=nvls onclick=toggleoffMenu()>PT/BR<img src=images/fb.svg class=imls></a><li><a href=EN/en.html class=nvls onclick=toggleoffMenu()>EN<img src=images/fs.svg class=imls></a><li><a href=ES/es.html class=nvls onclick=toggleoffMenu()>ES<img src=images/fe.svg class=imls></a></ul></header>
+<!--|Import|-->
+<link href="assets/css/style.css" rel="stylesheet">
+<!--|Import|-->
+
+<header id="hd">
+	<div id="lg_dv"><a href="/"><img class="lg" src="assets/images/logo.png"></a></div>
+	<ul id="ls">
+		<li><a class="ls_nv" href="/"><img class="ls_im" src="assets/images/botoes/home.svg">HOME</a></li>
+		<li><a class="ls_nv" href="sobre.html"><img class="ls_im" src="assets/images/botoes/sobre.svg">SOBRE NÓS</a></li>
+		<li><a class="ls_nv" href="contato.html"><img class="ls_im" src="assets/images/botoes/contato.svg">CONTATO</a></li>
+		<li class="ls_la"><img class="ls_im" src="assets/images/botoes/language.svg">LINGUAGEM
+			<ul class="ls_ls">
+				<li><a class="ls_nv" href="/"><img class="ls_im" src="assets/images/botoes/br.svg">PT/BR</a></li>
+				<li><a class="ls_nv" href="EN/en.html"><img class="ls_im" src="assets/images/botoes/en.svg">EN</a></li>
+				<li><a class="ls_nv" href="ES/es.html"><img class="ls_im" src="assets/images/botoes/es.svg">ES</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="mn_dv" onclick="toggleMenu()"><img id="mn" src="assets/images/botoes/menu.svg"></div>
+	<ul id="lsm">
+		<li class="ls_li"><a class="ls_nv" href="/">HOME<img class="ls_im" src="assets/images/botoes/home.svg"></a></li>
+		<li class="ls_li"><a class="ls_nv" href="sobre.html">SOBRE NÓS<img class="ls_im" src="assets/images/botoes/sobre.svg"></a></li>
+		<li class="ls_li"><a class="ls_nv" href="contato.html">CONTATO<img class="ls_im" src="assets/images/botoes/contato.svg"></a></li>
+		<li class="ls_la">LINGUAGEM<img class="ls_im" src="assets/images/botoes/language.svg">
+			<ul class="ls_ls">
+				<li class="ls_ls_li"><a class="ls_nv" href="/">PT/BR<img class="ls_im" src="assets/images/botoes/br.svg"></a></li>
+				<li class="ls_ls_li"><a class="ls_nv" href="EN/en.html">EN<img class="ls_im" src="assets/images/botoes/en.svg"></a></li>
+				<li class="ls_ls_li"><a class="ls_nv" href="ES/es.html">ES<img class="ls_im" src="assets/images/botoes/es.svg"></a></li>
+			</ul>
+		</li>
+	</ul>
+</header>
