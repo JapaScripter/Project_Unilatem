@@ -71,7 +71,8 @@ def pagamento_email():
         return jsonify({"message": "E-mail enviado com sucesso!"})
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print("Erro ao processar a requisição:", e)
+        return jsonify({'message': 'Erro ao processar o pagamento!'}), 500  # Retorna um erro 500 se algo der errado
 
 # Serve arquivos estáticos (CSS, JS, imagens)
 @app.route('/assets/<path:path>')
