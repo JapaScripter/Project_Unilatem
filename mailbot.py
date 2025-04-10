@@ -70,7 +70,7 @@ def pagamento():
     return render_template('pagamento.html')
 
 # Rota para enviar o e-mail
-@app.route('/pagamento', methods=['POST'])
+@app.route('/envio_email', methods=['POST'])
 def pagamento_email():
     try:
         data = request.get_json()  # Obtém os dados JSON da requisição
