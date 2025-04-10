@@ -11,25 +11,16 @@ import os
 load_dotenv()
 
 # Criar a instância do Flask e definir a pasta de templates e a pasta estática
-app = Flask(__name__, 
-            template_folder='.',  # Arquivos HTML na raiz
-            static_folder='assets')  # Arquivos estáticos (CSS, JS, etc.) na pasta "assets"
+app = Flask(__name__,template_folder='.',static_folder='assets')  # Arquivos HTML na raiz e Arquivos estáticos (CSS, JS, etc.) na pasta "assets"
 
 # Defina seu domínio de produção
-PRODUCTION_DOMAIN = "https://www.unilatem.com"
+PRODUCTION_DOMAIN = "https://unilatem.com"
 
 # Obtenha o ambiente onde o código está rodando
 if os.environ.get('FLASK_ENV') == 'production':
-    CORS(app, origins="https://www.unilatem.com")
+    CORS(app, origins="https://unilatem.com")
 else:
-    CORS(app, origins=["http://localhost:3000", "http://127.0.0.1:3000"])
-
-# Se estiver em produção, permita apenas o domínio de produção
-if env == 'production':
-    CORS(app, origins=PRODUCTION_DOMAIN)
-else:
-    # Durante o desenvolvimento, permita localhost e 127.0.0.1
-    CORS(app, origins=["http://127.0.0.1:8000", "http://localhost:8000", "https://www.unilatem.com"])
+    CORS(app, origins=["http://127.0.0.1:8000", "http://localhost:8000"])
 
 # Função para enviar o e-mail
 def enviar_email(subject, body, email_receivers):
@@ -64,27 +55,22 @@ def index():
 def casamento():
     return render_template('casamento.html')  # Carrega o HTML da página de pagamento
 
-# Rota para servir a página HTML de "pagamento"
-@app.route('/pagamento')
-def pagamento():
-    return render_template('pagamento.html')
-
 # Rota para enviar o e-mail
-@app.route('/envio_email', methods=['POST'])
-def pagamento_email():
-    try:
-        data = request.get_json()  # Obtém os dados JSON da requisição
-        subject = data.get('subject')
-        body = data.get('body')
-        email_receivers = ['yuriemavis@gmail.com']  # Lista de emails para envio
-
-        # Envia o e-mail
-        enviar_email(subject, body, email_receivers)
-        return jsonify({"message": "E-mail enviado com sucesso!"})
-
-    except Exception as e:
-        print("Erro ao processar a requisição:", e)
-        return jsonify({'message': 'Erro ao processar o pagamento!'}), 500  # Retorna um erro 500 se algo der errado
+@app.route('/pagamento', methods=['GET', 'POST'])
+def pagamento():
+    if request.method == 'GET':
+        return render_template('pagamento.html')
+    else:
+        try:
+            data = request.get_json()
+            subject = data.get('subject')
+            body = data.get('body')
+            email_receivers = ['yuriemavis@gmail.com']
+            enviar_email(subject, body, email_receivers)
+            return jsonify({"message": "E-mail enviado com sucesso!"})
+        except Exception as e:
+            print("Erro ao processar a requisição:", e)
+            return jsonify({'message': 'Erro ao processar o pagamento!'}), 500
 
 # Serve arquivos estáticos (CSS, JS, imagens)
 @app.route('/assets/<path:path>')
