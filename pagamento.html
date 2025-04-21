@@ -41,7 +41,16 @@
 				<div class="py_dv_td">
 					<img class="py_im_sd" id="fotoproduto" name="fotoproduto" readonly>
 				</div>
-				<form class="fm" id="form-compra" onsubmit="event.preventDefault(); enviar_email();">
+				<!-- <form class="fm" id="form-compra" onsubmit="event.preventDefault(); enviar_email();">
+					<p id="mensagemErro" style="display:none;">Por favor, preencha todos os campos.</p>
+					<label class="fm_lb">Seu Nome:<input class="fm_in" type="text" id="nome" name="nome" required></label>
+					<label class="fm_lb" for="produto">Seu Presente:<input class="fm_in" type="text" id="produto" name="produto" readonly></label>
+					<label class="fm_lb" for="valor">Valor:<input class="fm_in" type="text" id="valor" name="valor" readonly></label>
+					<label class="fm_lb">Sua Mensagem:<textarea class="fm_tx" id="mensagem" name="message" required></textarea></label>
+
+					<button id="botaosubmeter" class="fm_bt" type="submit">Presentear</button>
+				</form> -->
+				<form class="fm" id="form-compra" action="https://formspree.io/f/mvgglqwl" method="post">
 					<p id="mensagemErro" style="display:none;">Por favor, preencha todos os campos.</p>
 					<label class="fm_lb">Seu Nome:<input class="fm_in" type="text" id="nome" name="nome" required></label>
 					<label class="fm_lb" for="produto">Seu Presente:<input class="fm_in" type="text" id="produto" name="produto" readonly></label>
@@ -55,44 +64,44 @@
 
 		<!--|Script|-->
 		<script>
-			function enviar_email() {
-				const subject = "Você recebeu um presente de casamento de " + document.getElementById('nome').value + " - " + document.getElementById('produto').value;
-				const body = "Você recebeu o presente no valor de: " + document.getElementById('valor').value + "\n\n" + document.getElementById('mensagem').value;
+			// function enviar_email() {
+			// 	const subject = "Você recebeu um presente de casamento de " + document.getElementById('nome').value + " - " + document.getElementById('produto').value;
+			// 	const body = "Você recebeu o presente no valor de: " + document.getElementById('valor').value + "\n\n" + document.getElementById('mensagem').value;
 
-				// Verifica se está em produção ou desenvolvimento
-				const API_URL = 'https://unilatem.com/pagamento'; //CÓDIGO PARA PRODUÇÃO
-				//const API_URL = 'http://127.0.0.1:8000/pagamento'; CÓDIGO DE TESTE E DESENVOLVIMENTO NO VSCODE comando de teste: python3 mailbot.py
+			// 	// Verifica se está em produção ou desenvolvimento
+			// 	const API_URL = 'https://unilatem.com/pagamento'; //CÓDIGO PARA PRODUÇÃO
+			// 	//const API_URL = 'http://127.0.0.1:8000/pagamento'; CÓDIGO DE TESTE E DESENVOLVIMENTO NO VSCODE comando de teste: python3 mailbot.py
 
-				console.log("Enviando e-mail...");
+			// 	console.log("Enviando e-mail...");
 
-				fetch(API_URL, {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						subject: subject,
-						body: body,
-					})
-				})
-					.then(response => {
-						if (!response.ok) {
-							throw new Error(`Erro ${response.status}: ${response.statusText}`);
-						}
-						return response.json();
-					})
-					.then(data => {
-						if (data.message) {
-							alert(data.message);
-							window.location.reload(); // Recarrega a página após o envio bem-sucedido
-						} else {
-							alert("Erro: " + data.error);
-						}
-					})
-					.catch(error => {
-						alert("Erro na requisição: " + error);
-					});
-			}
+			// 	fetch(API_URL, {
+			// 		method: 'POST',
+			// 		headers: {
+			// 			'Content-Type': 'application/json',
+			// 		},
+			// 		body: JSON.stringify({
+			// 			subject: subject,
+			// 			body: body,
+			// 		})
+			// 	})
+			// 		.then(response => {
+			// 			if (!response.ok) {
+			// 				throw new Error(`Erro ${response.status}: ${response.statusText}`);
+			// 			}
+			// 			return response.json();
+			// 		})
+			// 		.then(data => {
+			// 			if (data.message) {
+			// 				alert(data.message);
+			// 				window.location.reload(); // Recarrega a página após o envio bem-sucedido
+			// 			} else {
+			// 				alert("Erro: " + data.error);
+			// 			}
+			// 		})
+			// 		.catch(error => {
+			// 			alert("Erro na requisição: " + error);
+			// 		});
+			// }
 		</script>
 
 		<script>

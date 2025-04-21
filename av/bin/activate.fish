@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/japascripter/Documents/Projects_Dev/Project_Unilatem/av
+set -gx VIRTUAL_ENV /home/xuwe/Documents/Projects/Project_Unilatem/av
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
