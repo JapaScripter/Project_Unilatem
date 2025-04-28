@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--|Meta Config.|-->
+		<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="description" content="Unique">
+		<meta name="author" content="Unique">
+		<link rel="shortcut icon" href="../assets/images/logos/favicon.ico">
+		<title>Pagamento</title>
+		<!--|Meta Config.|-->
+
+		<!--|Import|-->
+		<link rel="stylesheet" href="../assets/css/stylecasamento.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
+			});
+		</script>
+		<!--|Import|-->
+	</head>
+
+	<body>
+		<section class="py_sc">
+			<a href="casamento.html">
+				<img src="../assets/imagescasamento/arrow.svg" class="py_im_ft">
+			</a>
+			<div class="py_dv_ft">
+				<h2 class="py_tt">APONTE A CÂMERA NO QRCODE<br>PARA PAGAR</h2>
+				<img id="qrcode" name="qrcode">
+			</div>
+			<h2 class="py_tt">Código PIX</h2>
+			<h2 class="py_tt copiavel" id="numero">11949147702</h2>
+			<h2 class="py_tt">Mande sua mensagem de carinho!!!</h2>
+			<div class="py_dv_sd">
+				<div class="py_dv_td">
+					<img class="py_im_sd" id="fotoproduto" name="fotoproduto" readonly>
+				</div>
+				<!-- <form class="fm" id="form-compra" onsubmit="event.preventDefault(); enviar_email();">
+					<p id="mensagemErro" style="display:none;">Por favor, preencha todos os campos.</p>
+					<label class="fm_lb">Seu Nome:<input class="fm_in" type="text" id="nome" name="nome" required></label>
+					<label class="fm_lb" for="produto">Seu Presente:<input class="fm_in" type="text" id="produto" name="produto" readonly></label>
+					<label class="fm_lb" for="valor">Valor:<input class="fm_in" type="text" id="valor" name="valor" readonly></label>
+					<label class="fm_lb">Sua Mensagem:<textarea class="fm_tx" id="mensagem" name="message" required></textarea></label>
+
+					<button id="botaosubmeter" class="fm_bt" type="submit">Presentear</button>
+				</form> -->
+				<form class="fm" id="form-compra" action="https://formspree.io/f/mvgglqwl" method="post">
+					<p id="mensagemErro" style="display:none;">Por favor, preencha todos os campos.</p>
+					<label class="fm_lb">Seu Nome:<input class="fm_in" type="text" id="nome" name="nome" required></label>
+					<label class="fm_lb" for="produto">Seu Presente:<input class="fm_in" type="text" id="produto" name="produto" readonly></label>
+					<label class="fm_lb" for="valor">Valor:<input class="fm_in" type="text" id="valor" name="valor" readonly></label>
+					<label class="fm_lb">Sua Mensagem:<textarea class="fm_tx" id="mensagem" name="message" required></textarea></label>
+
+					<button id="botaosubmeter" class="fm_bt" type="submit">Presentear</button>
+				</form>
+			</div>
+		</section>
+
+		<!--|Script|-->
+		<!-- <script> -->
+			<!-- // function enviar_email() {
+			// 	const subject = "Você recebeu um presente de casamento de " + document.getElementById('nome').value + " - " + document.getElementById('produto').value;
+			// 	const body = "Você recebeu o presente no valor de: " + document.getElementById('valor').value + "\n\n" + document.getElementById('mensagem').value;
+
+			// 	// Verifica se está em produção ou desenvolvimento
+			// 	const API_URL = 'https://Unique.com/pagamento'; //CÓDIGO PARA PRODUÇÃO
+			// 	//const API_URL = 'http://127.0.0.1:8000/pagamento'; CÓDIGO DE TESTE E DESENVOLVIMENTO NO VSCODE comando de teste: python3 mailbot.py
+
+			// 	console.log("Enviando e-mail...");
+
+			// 	fetch(API_URL, {
+			// 		method: 'POST',
+			// 		headers: {
+			// 			'Content-Type': 'application/json',
+			// 		},
+			// 		body: JSON.stringify({
+			// 			subject: subject,
+			// 			body: body,
+			// 		})
+			// 	})
+			// 		.then(response => {
+			// 			if (!response.ok) {
+			// 				throw new Error(`Erro ${response.status}: ${response.statusText}`);
+			// 			}
+			// 			return response.json();
+			// 		})
+			// 		.then(data => {
+			// 			if (data.message) {
+			// 				alert(data.message);
+			// 				window.location.reload(); // Recarrega a página após o envio bem-sucedido
+			// 			} else {
+			// 				alert("Erro: " + data.error);
+			// 			}
+			// 		})
+			// 		.catch(error => {
+			// 			alert("Erro na requisição: " + error);
+			// 		});
+			// } -->
+		<!-- </script> -->
+
+		<script>
+			window.onload = function () {
+				// Recupera os dados do localStorage
+				const nomeProduto = localStorage.getItem('produto');
+				const valorProduto = localStorage.getItem('valor');
+				const fotoProduto = localStorage.getItem('foto');
+
+				// Preenche os campos do formulário com os dados do produto
+				document.getElementById('produto').value = nomeProduto;
+				document.getElementById('valor').value = valorProduto;
+				document.getElementById('fotoproduto').src = fotoProduto;
+
+				// Atualiza o QR Code de acordo com o valor do produto
+				const qrCodeImage = document.getElementById('qrcode');
+
+				// Definir a URL do QR code baseado no valor do produto
+				let qrCodeUrl = '';
+
+				// Abaixo definimos os QR codes com base nos valores
+				switch (valorProduto) {
+					case 'R$ 100,00':
+						qrCodeUrl = '../assets/imagescasamento/100.png';
+						break;
+					case 'R$ 200,00':
+						qrCodeUrl = '../assets/imagescasamento/200.png';
+						break;
+					case 'R$ 300,00':
+						qrCodeUrl = '../assets/imagescasamento/300.png';
+						break;
+					case 'R$ 400,00':
+						qrCodeUrl = '../assets/imagescasamento/400.png';
+						break;
+					case 'R$ 500,00':
+						qrCodeUrl = '../assets/imagescasamento/500.png';
+						break;
+					case 'R$ 600,00':
+						qrCodeUrl = '../assets/imagescasamento/600.png';
+						break;
+					case 'R$ 700,00':
+						qrCodeUrl = '../assets/imagescasamento/700.png';
+						break;
+					case 'R$ 800,00':
+						qrCodeUrl = '../assets/imagescasamento/800.png';
+						break;
+					case 'R$ 900,00':
+						qrCodeUrl = '../assets/imagescasamento/900.png';
+						break;
+					case 'R$ 1000,00':
+						qrCodeUrl = '../assets/imagescasamento/1000.png';
+						break;
+					case 'R$ 2000,00':
+						qrCodeUrl = '../assets/imagescasamento/2000.png';
+						break;
+					default:
+						qrCodeUrl = '../assets/imagescasamento/100.png'; // Padrão caso o valor não seja encontrado
+				}
+
+				// Atualiza a imagem do QR Code
+				qrCodeImage.src = qrCodeUrl;
+			};
+
+			// Corrigir a referência do botão
+			document.getElementById('botaosubmeter').addEventListener('click', function (event) {
+				const nomeCliente = document.getElementById('nome').value;
+				const mensagemCliente = document.getElementById('mensagem').value;
+
+				if (nomeCliente === '' || mensagemCliente === '') {
+					document.getElementById('mensagemErro').style.display = 'flex';
+					event.preventDefault(); // Impede o envio do formulário
+				} else {
+					document.getElementById('mensagemErro').style.display = 'none';
+					enviar_email();
+				}
+			});
+		</script>
+		<script>
+		const numero = document.getElementById("numero");
+
+		numero.addEventListener("click", function () {
+		const texto = numero.textContent;
+
+		navigator.clipboard.writeText(texto)
+			.then(() => {
+			numero.classList.add("copiado");
+			numero.textContent = "Copiado!";
+			setTimeout(() => {
+				numero.textContent = texto;
+				numero.classList.remove("copiado");
+			}, 1500);
+			})
+			.catch(err => {
+			alert("Erro ao copiar: " + err);
+			});
+		});
+	</script>
+		<!--|Script|-->
+	</body>
+
+</html>

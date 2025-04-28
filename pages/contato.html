@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--|Meta Config.|-->
+	<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0" />
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Unique" />
+	<meta name="author" content="Unique" />
+	<link rel="shortcut icon" href="../assets/images/logos/favicon.ico" />
+	<title>Unique | Contato</title>
+	<!--|Meta Config.|-->
+
+	<!--|Import|-->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<script rel="text/javascript" src="../assets/js/script.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
+		});
+	</script>
+	<script>
+		fetch("../components/header.html")
+			.then((e) => e.text())
+			.then((e) => {
+				document.querySelector("header").innerHTML = e;
+			}),
+			fetch("../components/footer.html")
+				.then((e) => e.text())
+				.then((e) => {
+					document.querySelector("footer").innerHTML = e;
+				});
+	</script>
+	<!--|Import|-->
+</head>
+
+<body>
+	<header></header>
+	<div id="particles-js"></div>
+	<section class="sc4">
+		<div class="dv4_ft">
+			<img class="im4" src="../assets/images/me.webp" alt="me" />
+			<div class="dv4_sd">
+				<h2 class="tt4">Elias Yuri Yoshi Miyashiro</h2>
+				<h2 class="tt41">Desenvolvedor Pleno Web, Front-End e Mobile</h2>
+				<p class="tx4">Conhecimentos: JavaScript, HTML, CSS, React, Python, C#, PHP, SQL, Jquery, Bootstrap,
+					AOS, Node.js, Git, Github, Tailwind, Cloudflare, Firebase, Locaweb, AWS, Netlify, DNS, SSL, Domain,
+					Pycharm, Flask, Flask_Cors, Email-Mime, GDScript e Godot.</p>
+				<a href="tel:+5511949147702" class="tx41">Ligar: +55 (11) 9 4914-7702</a>
+				<div class="dv4_td">
+					<a class="lk4" href="https://www.instagram.com/yuriyoshimiyashiro/" target="_blank">
+						<img class="im41" src="../assets/images/botoes/instagram.svg" />
+					</a>
+					<a class="lk4"	href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20orçar%20o%20meu%20site?" target="_blank">
+						<img class="im41" src="../assets/images/botoes/whatsapp.svg" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+	<script src="../assets/js/particles.js"></script>
+	<script src="../assets/js/app.js"></script>
+</body>
+
+</html>
