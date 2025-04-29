@@ -667,6 +667,65 @@
     <property name="seekable">1</property>
     <property name="meta.media.sample_aspect_num">1</property>
     <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-04-25T21:31:41</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">1332</property>
+    <property name="meta.media.height">642</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">-1</property>
+    <property name="shotcut:hash">91c8a578caeba9ee0ce9238c9086f77a</property>
+    <property name="shotcut:caption">25.04.2025_18.29.39_REC - Converted1.mov</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+  </chain>
+  <chain id="chain12" out="00:01:23.760">
+    <property name="length">00:01:23.800</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/xuwe/Documents/25.04.2025_18.29.39_REC - Converted1.mov</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1332</property>
+    <property name="meta.media.0.codec.height">642</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv422p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.name">dnxhd</property>
+    <property name="meta.media.0.codec.long_name">VC3/DNxHD</property>
+    <property name="meta.media.0.codec.bit_rate">77824000</property>
+    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">FFMP</property>
+    <property name="meta.attr.0.stream.encoder.markup">Lavc61.19.101 dnxhd</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">flt</property>
+    <property name="meta.media.1.codec.sample_rate">44100</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">pcm_f32le</property>
+    <property name="meta.media.1.codec.long_name">PCM 32-bit floating point little-endian</property>
+    <property name="meta.media.1.codec.bit_rate">2822400</property>
+    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">512</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.encoder.markup">Lavf61.7.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
     <property name="audio_index">1</property>
     <property name="video_index">0</property>
     <property name="creation_time">2025-04-25T21:31:41</property>
@@ -686,8 +745,9 @@
     <property name="xml">was here</property>
     <property name="meta.media.top_field_first">0</property>
     <property name="meta.media.progressive">1</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
   </chain>
-  <chain id="chain12" out="00:02:08.120">
+  <chain id="chain13" out="00:02:08.120">
     <property name="length">00:02:08.160</property>
     <property name="eof">pause</property>
     <property name="resource">/home/xuwe/Documents/25.04.2025_18.33.41_REC - Converted1.mov</property>
@@ -744,11 +804,12 @@
     <property name="meta.media.top_field_first">0</property>
     <property name="meta.media.progressive">1</property>
     <property name="shotcut:caption">25.04.2025_18.33.41_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
   </chain>
   <tractor id="tractor0" in="00:00:00.000" out="00:00:00.440">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain11" in="00:00:12.000" out="00:00:12.440"/>
-    <track producer="chain12" in="00:00:00.000" out="00:00:00.440"/>
+    <track producer="chain12" in="00:00:12.000" out="00:00:12.440"/>
+    <track producer="chain13" in="00:00:00.000" out="00:00:00.440"/>
     <transition id="transition0" out="00:00:00.440">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -760,9 +821,9 @@
     <transition id="transition1" out="00:00:00.440">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
     <filter id="filter0" out="00:00:00.440">
       <property name="version">0.2</property>
@@ -772,7 +833,66 @@
       <property name="0">0.2</property>
     </filter>
   </tractor>
-  <chain id="chain13" out="00:00:59.040">
+  <chain id="chain14" out="00:02:08.120">
+    <property name="length">00:02:08.160</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/xuwe/Documents/25.04.2025_18.33.41_REC - Converted1.mov</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1330</property>
+    <property name="meta.media.0.codec.height">644</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv422p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.name">dnxhd</property>
+    <property name="meta.media.0.codec.long_name">VC3/DNxHD</property>
+    <property name="meta.media.0.codec.bit_rate">77824000</property>
+    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">FFMP</property>
+    <property name="meta.attr.0.stream.encoder.markup">Lavc61.19.101 dnxhd</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">flt</property>
+    <property name="meta.media.1.codec.sample_rate">44100</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">pcm_f32le</property>
+    <property name="meta.media.1.codec.long_name">PCM 32-bit floating point little-endian</property>
+    <property name="meta.media.1.codec.bit_rate">2822400</property>
+    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">512</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.encoder.markup">Lavf61.7.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-04-25T21:36:01</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">1330</property>
+    <property name="meta.media.height">644</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">-1</property>
+    <property name="shotcut:hash">78c6c5fe12ced1dd3594b8bf0f3b23e5</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:caption">25.04.2025_18.33.41_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+  </chain>
+  <chain id="chain15" out="00:00:59.040">
     <property name="length">00:00:59.080</property>
     <property name="eof">pause</property>
     <property name="resource">/home/xuwe/Documents/25.04.2025_18.38.35_REC - Converted1.mov</property>
@@ -829,11 +949,12 @@
     <property name="meta.media.top_field_first">0</property>
     <property name="meta.media.progressive">1</property>
     <property name="shotcut:caption">25.04.2025_18.38.35_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
   </chain>
   <tractor id="tractor1" in="00:00:00.000" out="00:00:00.440">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain12" in="00:00:03.480" out="00:00:03.920"/>
-    <track producer="chain13" in="00:00:00.000" out="00:00:00.440"/>
+    <track producer="chain13" in="00:00:03.480" out="00:00:03.920"/>
+    <track producer="chain15" in="00:00:00.000" out="00:00:00.440"/>
     <transition id="transition2" out="00:00:00.440">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -849,12 +970,71 @@
     <transition id="transition3" out="00:00:00.440">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
-  <chain id="chain14" out="00:00:51.040">
+  <chain id="chain16" out="00:00:59.040">
+    <property name="length">00:00:59.080</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/xuwe/Documents/25.04.2025_18.38.35_REC - Converted1.mov</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1352</property>
+    <property name="meta.media.0.codec.height">638</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv422p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.name">dnxhd</property>
+    <property name="meta.media.0.codec.long_name">VC3/DNxHD</property>
+    <property name="meta.media.0.codec.bit_rate">76185600</property>
+    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">FFMP</property>
+    <property name="meta.attr.0.stream.encoder.markup">Lavc61.19.101 dnxhd</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">flt</property>
+    <property name="meta.media.1.codec.sample_rate">44100</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">pcm_f32le</property>
+    <property name="meta.media.1.codec.long_name">PCM 32-bit floating point little-endian</property>
+    <property name="meta.media.1.codec.bit_rate">2822400</property>
+    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">512</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.encoder.markup">Lavf61.7.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-04-25T21:39:45</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">1352</property>
+    <property name="meta.media.height">638</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">-1</property>
+    <property name="shotcut:hash">6ddbd96d2caac35d4981d566dce636ce</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:caption">25.04.2025_18.38.35_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+  </chain>
+  <chain id="chain17" out="00:00:51.040">
     <property name="length">00:00:51.080</property>
     <property name="eof">pause</property>
     <property name="resource">/home/xuwe/Documents/25.04.2025_18.36.44_REC - Converted1.mov</property>
@@ -911,11 +1091,12 @@
     <property name="meta.media.top_field_first">0</property>
     <property name="meta.media.progressive">1</property>
     <property name="shotcut:caption">25.04.2025_18.36.44_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
   </chain>
   <tractor id="tractor2" in="00:00:00.000" out="00:00:00.360">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain13" in="00:00:05.760" out="00:00:06.120"/>
-    <track producer="chain14" in="00:00:00.000" out="00:00:00.360"/>
+    <track producer="chain15" in="00:00:05.760" out="00:00:06.120"/>
+    <track producer="chain17" in="00:00:00.000" out="00:00:00.360"/>
     <transition id="transition4" out="00:00:00.360">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -931,12 +1112,71 @@
     <transition id="transition5" out="00:00:00.360">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
-  <chain id="chain15" out="00:00:46.520">
+  <chain id="chain18" out="00:00:51.040">
+    <property name="length">00:00:51.080</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/xuwe/Documents/25.04.2025_18.36.44_REC - Converted1.mov</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1310</property>
+    <property name="meta.media.0.codec.height">646</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv422p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.name">dnxhd</property>
+    <property name="meta.media.0.codec.long_name">VC3/DNxHD</property>
+    <property name="meta.media.0.codec.bit_rate">75366400</property>
+    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">FFMP</property>
+    <property name="meta.attr.0.stream.encoder.markup">Lavc61.19.101 dnxhd</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">flt</property>
+    <property name="meta.media.1.codec.sample_rate">44100</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">pcm_f32le</property>
+    <property name="meta.media.1.codec.long_name">PCM 32-bit floating point little-endian</property>
+    <property name="meta.media.1.codec.bit_rate">2822400</property>
+    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">512</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.encoder.markup">Lavf61.7.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-04-25T21:37:49</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">1310</property>
+    <property name="meta.media.height">646</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">-1</property>
+    <property name="shotcut:hash">f8a441fd4f2fcbf517ce7864bdd80ff4</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:caption">25.04.2025_18.36.44_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+  </chain>
+  <chain id="chain19" out="00:00:46.520">
     <property name="length">00:00:46.560</property>
     <property name="eof">pause</property>
     <property name="resource">/home/xuwe/Documents/25.04.2025_18.40.46_REC - Converted1.mov</property>
@@ -993,11 +1233,12 @@
     <property name="meta.media.top_field_first">0</property>
     <property name="meta.media.progressive">1</property>
     <property name="shotcut:caption">25.04.2025_18.40.46_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
   </chain>
   <tractor id="tractor3" in="00:00:00.000" out="00:00:00.560">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain14" in="00:00:08.280" out="00:00:08.840"/>
-    <track producer="chain15" in="00:00:00.000" out="00:00:00.560"/>
+    <track producer="chain17" in="00:00:08.280" out="00:00:08.840"/>
+    <track producer="chain19" in="00:00:00.000" out="00:00:00.560"/>
     <transition id="transition6" out="00:00:00.560">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -1013,12 +1254,71 @@
     <transition id="transition7" out="00:00:00.560">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
-  <chain id="chain16" out="00:00:03.000">
+  <chain id="chain20" out="00:00:46.520">
+    <property name="length">00:00:46.560</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/xuwe/Documents/25.04.2025_18.40.46_REC - Converted1.mov</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1348</property>
+    <property name="meta.media.0.codec.height">640</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv422p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.name">dnxhd</property>
+    <property name="meta.media.0.codec.long_name">VC3/DNxHD</property>
+    <property name="meta.media.0.codec.bit_rate">76185600</property>
+    <property name="meta.attr.0.stream.handler_name.markup">VideoHandler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">FFMP</property>
+    <property name="meta.attr.0.stream.encoder.markup">Lavc61.19.101 dnxhd</property>
+    <property name="meta.media.1.stream.type">audio</property>
+    <property name="meta.media.1.codec.sample_fmt">flt</property>
+    <property name="meta.media.1.codec.sample_rate">44100</property>
+    <property name="meta.media.1.codec.channels">2</property>
+    <property name="meta.media.1.codec.layout">stereo</property>
+    <property name="meta.media.1.codec.name">pcm_f32le</property>
+    <property name="meta.media.1.codec.long_name">PCM 32-bit floating point little-endian</property>
+    <property name="meta.media.1.codec.bit_rate">2822400</property>
+    <property name="meta.attr.1.stream.handler_name.markup">SoundHandler</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.major_brand.markup">qt  </property>
+    <property name="meta.attr.minor_version.markup">512</property>
+    <property name="meta.attr.compatible_brands.markup">qt  </property>
+    <property name="meta.attr.encoder.markup">Lavf61.7.100</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="creation_time">2025-04-25T21:41:45</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">1348</property>
+    <property name="meta.media.height">640</property>
+    <property name="meta.media.aspect_ratio">1</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">-1</property>
+    <property name="shotcut:hash">266fa190b17a6ffa6608b4fcfaa85db2</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="shotcut:caption">25.04.2025_18.40.46_REC - Converted1.mov</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+  </chain>
+  <chain id="chain21" out="00:00:03.000">
     <property name="length">00:00:03.040</property>
     <property name="eof">pause</property>
     <property name="resource">unique.mp4</property>
@@ -1069,8 +1369,8 @@
   </chain>
   <tractor id="tractor4" in="00:00:00.000" out="00:00:00.280">
     <property name="shotcut:transition">lumaMix</property>
-    <track producer="chain15" in="00:00:07.720" out="00:00:08.000"/>
-    <track producer="chain16" in="00:00:00.000" out="00:00:00.280"/>
+    <track producer="chain19" in="00:00:07.720" out="00:00:08.000"/>
+    <track producer="chain21" in="00:00:00.000" out="00:00:00.280"/>
     <transition id="transition8" out="00:00:00.280">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -1086,9 +1386,9 @@
     <transition id="transition9" out="00:00:00.280">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
       <property name="start">-1</property>
       <property name="accepts_blanks">1</property>
-      <property name="mlt_service">mix</property>
     </transition>
   </tractor>
   <playlist id="playlist0">
@@ -1096,21 +1396,22 @@
     <property name="shotcut:name">V1</property>
     <entry producer="chain11" in="00:00:00.000" out="00:00:11.960"/>
     <entry producer="tractor0" in="00:00:00.000" out="00:00:00.440"/>
-    <entry producer="chain12" in="00:00:00.480" out="00:00:03.440"/>
+    <entry producer="chain14" in="00:00:00.480" out="00:00:03.440"/>
     <entry producer="tractor1" in="00:00:00.000" out="00:00:00.440"/>
-    <entry producer="chain13" in="00:00:00.480" out="00:00:05.720"/>
+    <entry producer="chain16" in="00:00:00.480" out="00:00:05.720"/>
     <entry producer="tractor2" in="00:00:00.000" out="00:00:00.360"/>
-    <entry producer="chain14" in="00:00:00.400" out="00:00:08.240"/>
+    <entry producer="chain18" in="00:00:00.400" out="00:00:08.240"/>
     <entry producer="tractor3" in="00:00:00.000" out="00:00:00.560"/>
-    <entry producer="chain15" in="00:00:00.600" out="00:00:07.680"/>
+    <entry producer="chain20" in="00:00:00.600" out="00:00:07.680"/>
     <entry producer="tractor4" in="00:00:00.000" out="00:00:00.280"/>
-    <entry producer="chain16" in="00:00:00.320" out="00:00:03.000"/>
+    <entry producer="chain21" in="00:00:00.320" out="00:00:03.000"/>
   </playlist>
   <tractor id="tractor5" title="Shotcut version 25.03.29" in="00:00:00.000" out="00:00:40.240">
     <property name="shotcut">1</property>
-    <property name="shotcut:scaleFactor">0.020648</property>
+    <property name="shotcut:scaleFactor">0.840584</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
+    <property name="shotcut:skipConvert">0</property>
     <track producer="background"/>
     <track producer="playlist0"/>
     <transition id="transition10">
