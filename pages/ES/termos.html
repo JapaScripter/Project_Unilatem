@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!--|Meta Config.|-->
-    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0" />
+    <meta
+      name="viewport"
+      charset="utf-8"
+      content="width=device-width initial-scale= 1.0"
+    />
     <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
     <meta name="description" content="Unique" />
     <meta name="author" content="Unique" />
@@ -17,58 +20,78 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
+      });
     </script>
     <script>
-        fetch("components/header.html")
-            .then((e) => e.text())
-            .then((e) => {
-                document.querySelector("header").innerHTML = e;
-            }),
-            fetch("components/footer.html")
-                .then((e) => e.text())
-                .then((e) => {
-                    document.querySelector("footer").innerHTML = e;
-                });
+      fetch("components/header.html")
+        .then((e) => e.text())
+        .then((e) => {
+          document.querySelector("header").innerHTML = e;
+        }),
+        fetch("components/footer.html")
+          .then((e) => e.text())
+          .then((e) => {
+            document.querySelector("footer").innerHTML = e;
+          });
     </script>
     <!--|Import|-->
-</head>
+  </head>
 
-<body>
+  <body>
     <header></header>
 
     <!-- particles.js container -->
     <div id="particles-js"></div>
 
     <section id="sectm">
-        <h1 class="tttm">
-           Condiciones de Uso<img class="imtm" src="../../assets/images/botoes/termo.svg" />
-        </h1>
-        <div class="dvtm" alt="escudo com um usuário no meio">
-            <p class="txtm">
-                ¡Bienvenidos a Único! Al acceder y utilizar nuestro sitio web, usted acepta cumplir con los siguientes términos y condiciones:
-                <br /><br />
-                1. Uso del sitio web: Unique está destinado a uso comercial y empresarial. Usted se compromete a utilizar el sitio web únicamente para los fines previstos en el contexto de actividades comerciales.
-                <br /><br />
-                2. Contenido del usuario: al contribuir con contenido a Unique, usted otorga permiso para que la plataforma utilice dicho contenido de acuerdo con nuestros términos, principalmente en un contexto comercial.
-                <br /><br />
-                3. Privacidad: Respetamos su privacidad. Lea nuestra política de privacidad para comprender cómo se recopila, utiliza y protege su información.
-                <br /><br />
-                4. Propiedad intelectual: Todo el contenido presente en Unique, incluidos textos, imágenes, vídeos y logotipos, está protegido por derechos de autor y propiedad intelectual, especialmente en el contexto del uso comercial.
-                <br /><br />
-                5. Limitación de responsabilidad: Usted no será responsable de ningún daño directo, indirecto, incidental, especialmente consecuente que resulte del uso o de la imposibilidad de usar nuestro sitio web en un contexto comercial.
-                <br /><br />
-                6. Cambios en los Términos: Nos reservamos el derecho de modificar estos términos en cualquier momento. Le recomendamos que revise periódicamente los términos de uso.
-                <br /><br />
-                Al continuar utilizando el sitio web de Unique, usted acepta estos términos y condiciones. Si tiene alguna pregunta sobre los términos de uso, comuníquese con nosotros.
-            </p>
-        </div>
+      <h1 class="tttm">
+        Condiciones de Uso<img
+          class="imtm"
+          src="../../assets/images/botoes/termo.svg"
+        />
+      </h1>
+      <div class="dvtm" alt="escudo com um usuário no meio">
+        <p class="txtm">
+          ¡Bienvenidos a Único! Al acceder y utilizar nuestro sitio web, usted
+          acepta cumplir con los siguientes términos y condiciones:
+          <br /><br />
+          1. Uso del sitio web: Unique está destinado a uso comercial y
+          empresarial. Usted se compromete a utilizar el sitio web únicamente
+          para los fines previstos en el contexto de actividades comerciales.
+          <br /><br />
+          2. Contenido del usuario: al contribuir con contenido a Unique, usted
+          otorga permiso para que la plataforma utilice dicho contenido de
+          acuerdo con nuestros términos, principalmente en un contexto
+          comercial.
+          <br /><br />
+          3. Privacidad: Respetamos su privacidad. Lea nuestra política de
+          privacidad para comprender cómo se recopila, utiliza y protege su
+          información.
+          <br /><br />
+          4. Propiedad intelectual: Todo el contenido presente en Unique,
+          incluidos textos, imágenes, vídeos y logotipos, está protegido por
+          derechos de autor y propiedad intelectual, especialmente en el
+          contexto del uso comercial.
+          <br /><br />
+          5. Limitación de responsabilidad: Usted no será responsable de ningún
+          daño directo, indirecto, incidental, especialmente consecuente que
+          resulte del uso o de la imposibilidad de usar nuestro sitio web en un
+          contexto comercial.
+          <br /><br />
+          6. Cambios en los Términos: Nos reservamos el derecho de modificar
+          estos términos en cualquier momento. Le recomendamos que revise
+          periódicamente los términos de uso.
+          <br /><br />
+          Al continuar utilizando el sitio web de Unique, usted acepta estos
+          términos y condiciones. Si tiene alguna pregunta sobre los términos de
+          uso, comuníquese con nosotros.
+        </p>
+      </div>
     </section>
     <footer></footer>
     <script src="../../assets/js/particles.js"></script>
-	<script src="../../assets/js/app.js"></script>
-</body>
-
+    <script src="../../assets/js/app.js"></script>
+  </body>
 </html>
