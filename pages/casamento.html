@@ -1,236 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--|Meta Config.|-->
-    <meta
-      name="viewport"
-      charset="utf-8"
-      content="width=device-width initial-scale= 1.0"
-    />
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
-    <meta name="description" content="Unique" />
-    <meta name="author" content="Unique" />
-    <link rel="shortcut icon" href="../assets/images/logos/favicon.ico" />
-    <title>Casamento</title>
-    <!--|Meta Config.|-->
 
-    <!--|Import|-->
-    <link rel="stylesheet" href="../assets/css/stylecasamento.css" />
-    <script rel="text/javascript" src="../assets/js/script.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
-      });
-    </script>
-    <!--|Import|-->
-  </head>
+<head>
+	<!--|Meta Config.|-->
+	<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0" />
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Unique" />
+	<meta name="author" content="Unique" />
+	<link rel="shortcut icon" href="../assets/images/logos/favicon.ico" />
+	<title>Casamento</title>
+	<!--|Meta Config.|-->
 
-  <body>
-    <h2 class="cs_hr_tt1">Casamento<br />Mari & Yuri</h2>
-    <section class="cs_sc_hr">
-      <img
-        class="imagem item1"
-        alt="Imagem Principal Excelência"
-        src="../assets/imagescasamento/hero1.jpeg"
-      />
-      <img
-        class="imagem item2"
-        alt="Imagem Principal Especialização"
-        src="../assets/imagescasamento/hero2.jpeg"
-      />
-      <img
-        class="imagem item3"
-        alt="Imagem Principal Inovação"
-        src="../assets/imagescasamento/hero3.jpeg"
-      />
-    </section>
-    <section class="cs_sc_ft">
-      <p class="cs_sc_tx">
-        Nosso grande dia está se aproximando, e não poderíamos estar mais
-        felizes em celebrar essa união com pessoas tão especiais como vocês.
-        Como já sabemos que o amor e a presença de cada um de vocês são os
-        maiores presentes que poderíamos receber, optamos por uma maneira
-        simples e prática de celebrar ainda mais esse momento: um presente em
-        forma de contribuição para nossa nova jornada juntos.
-        <br /><br />
-        Aqui no site, vocês podem escolher o valor que desejam nos presentear.
-        <br /><br />
-        Basta selecionar o valor que mais combina com você e seguir para o
-        pagamento. Toda a contribuição será muito bem-vinda e será uma forma
-        linda de partilhar conosco o início dessa nova fase da nossa vida.
-        <br /><br />
-        Agradecemos de coração a sua presença e carinho!
-        <br /><br />
-        Com amor, Mari e Yuri<br />
-        🥰🥰🥰🥰
-      </p>
-      <div class="cs_dv1">
-        <div
-          class="ProductCard"
-          data-nome="Pro noivo nadar com tubarões (Talvez ele não volte hihi...)"
-          data-valor="R$ 100,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/1.jpg"
-            alt="Produto 1"
-          />
-          <p class="ProductCard_Name">
-            Pro noivo nadar com tubarões<br />(Talvez ele não volte...)
-          </p>
-          <p class="ProductCard_Price">Valor: R$ 100,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Para podermos tomar um cafezinho!"
-          data-valor="R$ 200,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/2.jpg"
-            alt="Produto 2"
-          />
-          <p class="ProductCard_Name">Para podermos tomar um cafezinho!</p>
-          <p class="ProductCard_Price">Valor: R$ 200,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Pra noiva não entrar nervosa no casamento (Possivelmente ela entre suja, hihi...)"
-          data-valor="R$ 300,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/3.jpg"
-            alt="Produto 3"
-          />
-          <p class="ProductCard_Name">
-            Pra noiva não entrar nervosa no casamento.<br />(Possivelmente ela
-            entre suja, hihi...)
-          </p>
-          <p class="ProductCard_Price">Valor:R$ 300,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Comprar uma Alexa para a Mari não mandar somente no Yuri"
-          data-valor="R$ 400,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/4.png"
-            alt="Produto 4"
-          />
-          <p class="ProductCard_Name">
-            Comprar uma Alexa para a Mari não mandar somente no Yuri
-          </p>
-          <p class="ProductCard_Price">Valor: R$ 400,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Fazer o Yuri virar Palmeirense!"
-          data-valor="R$ 600,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/5.jpeg"
-            alt="Produto 5"
-          />
-          <p class="ProductCard_Name">Fazer o Yuri virar Palmeirense!</p>
-          <p class="ProductCard_Price">Valor:R$ 600,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Fazer a Mari virar Corinthiana!"
-          data-valor="R$ 600,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/6.jpg"
-            alt="Produto 6"
-          />
-          <p class="ProductCard_Name">Fazer a Mari virar Corinthiana!</p>
-          <p class="ProductCard_Price">Valor:R$ 600,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Pagar alguns boletos dos noivos!"
-          data-valor="R$ 900,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/7.png"
-            alt="Produto 7"
-          />
-          <p class="ProductCard_Name">
-            Ajude a pagar uns boletos<br />Sério da até medo.
-          </p>
-          <p class="ProductCard_Price">Valor:R$ 900,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="Vire o nosso tio RICO!"
-          data-valor="R$ 1000,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/8.jpg"
-            alt="Produto 8"
-          />
-          <p class="ProductCard_Name">Vire o nosso tio RICO!</p>
-          <p class="ProductCard_Price">Valor:R$ 1000,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-        <div
-          class="ProductCard"
-          data-nome="EITA QUE O ESPIRITO SANTO DESCEU!"
-          data-valor="R$ 2000,00"
-        >
-          <img
-            class="ProductCard_Img"
-            src="../assets/imagescasamento/9.jpg"
-            alt="Produto 9"
-          />
-          <p class="ProductCard_Name">EITA QUE O ESPIRITO SANTO DESCEU!</p>
-          <p class="ProductCard_Price">Valor:R$ 2000,00</p>
-          <a href="#" class="presentear">Presentear</a>
-        </div>
-      </div>
-    </section>
+	<!--|Import|-->
+	<link rel="stylesheet" href="../assets/css/stylecasamento.css" />
+	<script rel="text/javascript" src="../assets/js/script.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
+		});
+	</script>
+	<!--|Import|-->
+</head>
 
-    <!--|Script|-->
-    <script>
-      // Seleciona todos os links "Presentear"
-      const linksPresentear = document.querySelectorAll(".presentear");
+<body>
+	<h2 class="cs_hr_tt1">Casamento<br />Mari & Yuri</h2>
+	<section class="cs_sc_hr">
+		<img class="imagem item1" alt="Imagem Principal Excelência" src="../assets/imagescasamento/hero1.jpeg" />
+		<img class="imagem item2" alt="Imagem Principal Especialização" src="../assets/imagescasamento/hero2.jpeg" />
+		<img class="imagem item3" alt="Imagem Principal Inovação" src="../assets/imagescasamento/hero3.jpeg" />
+	</section>
+	<section class="cs_sc_ft">
+		<p class="cs_sc_tx">
+			Nosso grande dia está se aproximando, e não poderíamos estar mais
+			felizes em celebrar essa união com pessoas tão especiais como vocês.
+			Como já sabemos que o amor e a presença de cada um de vocês são os
+			maiores presentes que poderíamos receber, optamos por uma maneira
+			simples e prática de celebrar ainda mais esse momento: um presente em
+			forma de contribuição para nossa nova jornada juntos.
+			<br /><br />
+			Aqui no site, vocês podem escolher o valor que desejam nos presentear.
+			<br /><br />
+			Basta selecionar o valor que mais combina com você e seguir para o
+			pagamento. Toda a contribuição será muito bem-vinda e será uma forma
+			linda de partilhar conosco o início dessa nova fase da nossa vida.
+			<br /><br />
+			Agradecemos de coração a sua presença e carinho!
+			<br /><br />
+			Com amor, Mari e Yuri<br />
+			🥰🥰🥰🥰
+		</p>
+		<div class="cs_dv1">
+			<div class="ProductCard" data-nome="Pro noivo nadar com tubarões (Talvez ele não volte hihi...)" data-valor="R$ 100,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/1.jpg" alt="Produto 1" />
+				<p class="ProductCard_Name">
+					Pro noivo nadar com tubarões<br />(Talvez ele não volte...)
+				</p>
+				<p class="ProductCard_Price">Valor: R$ 100,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Para podermos tomar um cafezinho!" data-valor="R$ 200,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/2.jpg" alt="Produto 2" />
+				<p class="ProductCard_Name">Para podermos tomar um cafezinho!</p>
+				<p class="ProductCard_Price">Valor: R$ 200,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Pra noiva não entrar nervosa no casamento (Possivelmente ela entre suja, hihi...)" data-valor="R$ 300,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/3.jpg" alt="Produto 3" />
+				<p class="ProductCard_Name">
+					Pra noiva não entrar nervosa no casamento.<br />(Possivelmente ela
+					entre suja, hihi...)
+				</p>
+				<p class="ProductCard_Price">Valor:R$ 300,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Comprar uma Alexa para a Mari não mandar somente no Yuri" data-valor="R$ 400,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/4.png" alt="Produto 4" />
+				<p class="ProductCard_Name">
+					Comprar uma Alexa para a Mari não mandar somente no Yuri
+				</p>
+				<p class="ProductCard_Price">Valor: R$ 400,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Fazer o Yuri virar Palmeirense!" data-valor="R$ 600,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/5.jpeg" alt="Produto 5" />
+				<p class="ProductCard_Name">Fazer o Yuri virar Palmeirense!</p>
+				<p class="ProductCard_Price">Valor:R$ 600,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Fazer a Mari virar Corinthiana!" data-valor="R$ 600,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/6.jpg" alt="Produto 6" />
+				<p class="ProductCard_Name">Fazer a Mari virar Corinthiana!</p>
+				<p class="ProductCard_Price">Valor:R$ 600,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Pagar alguns boletos dos noivos!" data-valor="R$ 900,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/7.png" alt="Produto 7" />
+				<p class="ProductCard_Name">
+					Ajude a pagar uns boletos<br />Sério da até medo.
+				</p>
+				<p class="ProductCard_Price">Valor:R$ 900,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="Vire o nosso tio RICO!" data-valor="R$ 1000,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/8.jpg" alt="Produto 8" />
+				<p class="ProductCard_Name">Vire o nosso tio RICO!</p>
+				<p class="ProductCard_Price">Valor:R$ 1000,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+			<div class="ProductCard" data-nome="DEUS TE ABENÇOE100x MAIS!" data-valor="R$ 2000,00">
+				<img class="ProductCard_Img" src="../assets/imagescasamento/9.jpg" alt="Produto 9" />
+				<p class="ProductCard_Name">DEUS TE ABENÇOE 100x MAIS!</p>
+				<p class="ProductCard_Price">Valor:R$ 2000,00</p>
+				<a href="#" class="presentear">Presentear</a>
+			</div>
+		</div>
+	</section>
 
-      // Adiciona o evento de clique em cada link
-      linksPresentear.forEach((link) => {
-        link.addEventListener("click", function (event) {
-          event.preventDefault(); // Evita o comportamento padrão de navegação
+	<!--|Script|-->
+	<script>
+		// Seleciona todos os links "Presentear"
+		const linksPresentear = document.querySelectorAll(".presentear");
 
-          // Pega os dados do produto (nome e valor) do elemento pai
-          const produto = link.parentElement;
-          const nomeProduto = produto.getAttribute("data-nome");
-          const valorProduto = produto.getAttribute("data-valor");
-          const fotoProduto = produto.querySelector("img").src;
+		// Adiciona o evento de clique em cada link
+		linksPresentear.forEach((link) => {
+			link.addEventListener("click", function (event) {
+				event.preventDefault(); // Evita o comportamento padrão de navegação
 
-          // Armazena os dados no localStorage
-          localStorage.setItem("produto", nomeProduto);
-          localStorage.setItem("valor", valorProduto);
-          localStorage.setItem("foto", fotoProduto);
+				// Pega os dados do produto (nome e valor) do elemento pai
+				const produto = link.parentElement;
+				const nomeProduto = produto.getAttribute("data-nome");
+				const valorProduto = produto.getAttribute("data-valor");
+				const fotoProduto = produto.querySelector("img").src;
 
-          // Redireciona para a página de pagamento
-          window.location.href = "/pages/pagamento.html"; // Ajuste o caminho conforme necessário
-        });
-      });
-    </script>
-    <!--|Script|-->
-  </body>
+				// Armazena os dados no localStorage
+				localStorage.setItem("produto", nomeProduto);
+				localStorage.setItem("valor", valorProduto);
+				localStorage.setItem("foto", fotoProduto);
+
+				// Redireciona para a página de pagamento
+				window.location.href = "/pages/pagamento.html"; // Ajuste o caminho conforme necessário
+			});
+		});
+	</script>
+	<!--|Script|-->
+</body>
+
 </html>
