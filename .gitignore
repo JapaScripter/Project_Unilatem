@@ -1,2 +1,3 @@
 # Ignorar o arquivo .env, que contém credenciais sensíveis
 .env
+node_modules

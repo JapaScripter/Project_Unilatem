@@ -5,184 +5,144 @@
 	<!--|Meta Config.|-->
 	<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0" />
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
-	<meta name="description" content="Unique" />
-	<meta name="author" content="Unique" />
-	<link rel="shortcut icon" href="../../assets/images/logos/favicon.ico" />
-	<title>Unique is Unique | Home</title>
+	<meta name="description" content="Unique/Unilatem" />
+	<meta name="author" content="Unique/Unilatem" />
+	<link rel="shortcut icon" href="/assets/images/logos/favicon.ico" />
+	<title>Unique/Unilatem is Unique/Unilatem | Home</title>
 	<!--|Meta Config.|-->
 
 	<!--|Import|-->
-	<link rel="stylesheet" href="../../assets/css/style.css" />
-	<script rel="text/javascript" src="../../assets/js/script.js"></script>
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<script rel="text/javascript" src="/assets/js/script.js"></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
-		});
-	</script>
-	<script>
-		fetch("components/header.html")
-			.then((e) => e.text())
-			.then((e) => {
-				document.querySelector("header").innerHTML = e;
-			}),
-			fetch("components/footer.html")
-				.then((e) => e.text())
-				.then((e) => {
-					document.querySelector("footer").innerHTML = e;
-				});
-	</script>
+	<script>document.addEventListener("DOMContentLoaded", function () { AOS.init(); });</script>
+	<script>fetch("./components/header.html").then((e => e.text())).then((e => { document.querySelector("header").innerHTML = e })), fetch("./components/footer.html").then((e => e.text())).then((e => { document.querySelector("footer").innerHTML = e })); const trySetYear = () => { const spanAno = document.getElementById('ano-atual'); if (spanAno) { spanAno.textContent = new Date().getFullYear(); } else { setTimeout(trySetYear, 50); } }; trySetYear();</script>
 	<!--|Import|-->
 </head>
 
 <body>
 	<header></header>
-
-	<!-- particles.js container -->
-	<div id="particles-js"></div>
-
-	<section class="sc1">
-		<video class="video" autoplay muted loop>
-			<source src="../../assets/images/unique.mp4" type="video/mp4" />
-			Your browser does not support videos.
-		</video>
-	</section>
-	<section class="sc2">
-		<h2 class="tt2">Clientes</h2>
-		<div class="slider">
-			<div class="slide-track">
-				<div class="slide">
-					<img class="im2" src="../../assets/images/salusvita.webp" alt="salusvita" />
-				</div>
-				<div class="slide">
-					<img class="im2" src="../../assets/images/maite.webp" alt="maite" />
-				</div>
-				<div class="slide">
-					<img class="im21" src="../../assets/images/apav.webp" alt="apav" />
-				</div>
-				<div class="slide">
-					<img class="im21" src="../../assets/images/porele.webp" alt="porele" />
-				</div>
-				<div class="slide">
-					<img class="im2" src="../../assets/images/eklesia.webp" alt="eklesia" />
-				</div>
-				<div class="slide">
-					<img class="im2" src="../../assets/images/amtruck.webp" alt="amtruck" />
-				</div>
-				<div class="slide">
-					<img class="im2" src="../../assets/images/salusvita.webp" alt="salusvita" />
-				</div>
-				<div class="slide">
-					<img class="im2" src="../../assets/images/maite.webp" alt="maite" />
-				</div>
-				<div class="slide">
-					<img class="im21" src="../../assets/images/apav.webp" alt="apav" />
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="sc3">
-		<h2 class="tt3_ft">Visite o site dos nossos clientes:</h2>
-		<div class="dv3_ft">
-			<div class="dv3_sd">
-				<img class="im3" src="../../assets/images/salusvita.webp" alt="salusvita" />
-				<h2 class="tt3_sd">Salusvita</h2>
-				<p class="p3">
-					Site desenvolvido para promover a presença digital da Salusvita,
-					empresa especializada em segurança do trabalho. A proposta foi criar
-					uma plataforma funcional e confiável, que transmitisse autoridade no
-					segmento e facilitasse a apresentação dos serviços oferecidos, além
-					de incentivar o contato direto com clientes em potencial.
-				</p>
-				<a class="lk3">Site Salusvita</a>
-			</div>
-			<div class="dv3_sd">
-				<img class="im3" src="../../assets/images/maite.webp" alt="maite" />
-				<h2 class="tt3_sd">Maite</h2>
-				<p class="p3">
-					Plataforma criada com o objetivo de conectar a Maite Esquadrias a
-					seu público-alvo de forma prática e eficiente. O site permite que os
-					usuários conheçam os produtos e solicitem orçamentos personalizados
-					de esquadrias de alumínio sob medida. A experiência do usuário foi
-					priorizada, com navegação intuitiva e design limpo.
-				</p>
-				<a class="lk3">Site Maite</a>
-			</div>
-			<div class="dv3_sd">
-				<img class="im31" src="../../assets/images/apav.webp" alt="apav" />
-				<h2 class="tt3_sd">APAV</h2>
-				<p class="p3">
-					Desenvolvido para dar visibilidade ao projeto missionário cristão da
-					APAV, o site apresenta a atuação da associação na evangelização no
-					Brasil e em países da América Latina. A estrutura foi pensada para
-					inspirar, mobilizar novos membros e apoiadores, além de divulgar
-					eventos, testemunhos e conteúdos edificantes..
-				</p>
-				<a class="lk3">Site APAV</a>
-			</div>
-			<div class="dv3_sd">
-				<img class="im31" src="../../assets/images/porele.webp" alt="porele" />
-				<h2 class="tt3_sd">Por Ele</h2>
-				<p class="p3">
-					Site institucional criado para uma igreja cristã com o propósito de
-					fortalecer sua identidade online e ampliar os canais de comunicação
-					com os fiéis. Além de transmitir confiança e compromisso com a fé, a
-					plataforma oferece meios acessíveis para contribuições, informações
-					sobre cultos e projetos sociais.
-				</p>
-				<a class="lk3">Site Por Ele</a>
-			</div>
-			<div class="dv3_sd">
-				<img class="im3" src="../../assets/images/eklesia.webp" alt="eklesia" />
-				<h2 class="tt3_sd">Eklesia Kerigma</h2>
-				<p class="p3">
-					Desenvolvido para apoiar o ministério de um pastor brasileiro
-					atuante no Paraguai, o site da Eklesia Kerigma tem como missão
-					divulgar as atividades da igreja local, atrair doações e apoio
-					missionário, além de manter a comunidade informada sobre eventos e
-					ações evangelísticas na região.
-				</p>
-				<a class="lk3">Site Eklesia Kerigma</a>
-			</div>
-			<div class="dv3_sd">
-				<img class="im3" src="../../assets/images/amtruck.webp" alt="amtruck" />
-				<h2 class="tt3_sd">AMTruck</h2>
-				<p class="p3">
-					Projeto de renovação do site da AMTRUCK, empresa especializada em
-					serviços de guincho e assistência veicular. A nova versão apresenta
-					uma identidade visual moderna e dinâmica, com foco na usabilidade e
-					na clareza das informações, proporcionando uma experiência mais
-					eficiente para quem busca atendimento rápido e confiável.
-				</p>
-				<a class="lk3">Site AMTruck</a>
-			</div>
-		</div>
-	</section>
-	<section class="sc4">
-		<div class="dv4_ft">
-			<img class="im4" src="../../assets/images/me.webp" alt="me" />
-			<div class="dv4_sd">
-				<h2 class="tt4">Elias Yuri Yoshi Miyashiro</h2>
-				<h2 class="tt41">Desenvolvedor Pleno Web, Front-End e Mobile</h2>
-				<p class="tx4">Conhecimentos: JavaScript, HTML, CSS, React, Python, C#, PHP, SQL, Jquery, Bootstrap,
-					AOS, Node.js, Git, Github, Tailwind, Cloudflare, Firebase, Locaweb, AWS, Netlify, DNS, SSL, Domain,
-					Pycharm, Flask, Flask_Cors, Email-Mime, GDScript e Godot.</p>
-				<a href="tel:+5511949147702" class="tx41">Ligar: +55 (11) 9 4914-7702</a>
-				<div class="dv4_td">
-					<a class="lk4" href="https://www.instagram.com/yuriyoshimiyashiro/" target="_blank">
-						<img class="im41" src="../../assets/images/botoes/instagram.svg" />
-					</a>
-					<a class="lk4" href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20orçar%20o%20meu%20site?" target="_blank">
-						<img class="im41" src="../../assets/images/botoes/whatsapp.svg" />
-					</a>
+	<main>
+		<div id="particles-js"></div>
+		<section class="sc1">
+			<video class="video" autoplay muted loop>
+				<source src="/assets/images/unique.mp4" type="video/mp4" />
+				Your browser does not support videos.
+			</video>
+		</section>
+		<section class="sc2">
+			<h2 class="tt2">Customers</h2>
+			<div class="slider">
+				<div class="slide-track">
+					<div class="slide">
+						<img class="im2" src="/assets/images/salusvita.webp" alt="salusvita" />
+					</div>
+					<div class="slide">
+						<img class="im2" src="/assets/images/maite.webp" alt="maite" />
+					</div>
+					<div class="slide">
+						<img class="im21" src="/assets/images/apav.webp" alt="apav" />
+					</div>
+					<div class="slide">
+						<img class="im21" src="/assets/images/porele.webp" alt="porele" />
+					</div>
+					<div class="slide">
+						<img class="im2" src="/assets/images/eklesia.webp" alt="eklesia" />
+					</div>
+					<div class="slide">
+						<img class="im2" src="/assets/images/amtruck.webp" alt="amtruck" />
+					</div>
+					<div class="slide">
+						<img class="im2" src="/assets/images/salusvita.webp" alt="salusvita" />
+					</div>
+					<div class="slide">
+						<img class="im2" src="/assets/images/maite.webp" alt="maite" />
+					</div>
+					<div class="slide">
+						<img class="im21" src="/assets/images/apav.webp" alt="apav" />
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+		<section class="sc3">
+			<h2 class="tt3_ft">Visit our customers websites:</h2>
+			<div class="dv3_ft">
+				<div class="dv3_sd">
+					<img class="im3" src="/assets/images/salusvita.webp" alt="salusvita" />
+					<h2 class="tt3_sd">Salusvita</h2>
+					<p class="p3">
+						Website developed to promote the digital presence of Salusvita, a company specializing in occupational safety. The proposal was to create a functional and reliable platform that would convey authority in the segment and facilitate the presentation of the services offered, in addition to encouraging direct contact with potential clients.
+					</p>
+					<a class="lk3" href="https://www.salusvita.com.br/" target="_blank">Site Salusvita</a>
+				</div>
+				<div class="dv3_sd">
+					<img class="im3" src="/assets/images/maite.webp" alt="maite" />
+					<h2 class="tt3_sd">Maite</h2>
+					<p class="p3">
+						Platform created with the aim of connecting Maite Esquadrias to its target audience in a practical and efficient way. The website allows users to learn about the products and request personalized quotes for custom-made aluminum frames. The user experience was prioritized, with intuitive navigation and a clean design.
+					</p>
+					<a class="lk3" href="https://maitesquadrias.com.br/" target="_blank">Site Maite</a>
+				</div>
+				<div class="dv3_sd">
+					<img class="im31" src="/assets/images/apav.webp" alt="apav" />
+					<h2 class="tt3_sd">APAV</h2>
+					<p class="p3">
+						Developed to give visibility to APAV's Christian missionary project, the website presents the association's work in evangelization in Brazil and Latin American countries. The structure was designed to inspire, mobilize new members and supporters, in addition to publicizing events, testimonies and edifying content.
+					</p>
+					<a class="lk3" href="https://apav.netlify.app/" target="_blank">Site APAV</a>
+				</div>
+				<div class="dv3_sd">
+					<img class="im31" src="/assets/images/porele.webp" alt="porele" />
+					<h2 class="tt3_sd">Por Ele</h2>
+					<p class="p3">
+						Institutional website created for a Christian church with the purpose of strengthening its online identity and expanding communication channels with the faithful. In addition to conveying trust and commitment to faith, the platform offers accessible means for contributions, information about services and social projects.
+					</p>
+					<a class="lk3" href="https://porele.netlify.app/" target="_blank">Site Por Ele</a>
+				</div>
+				<div class="dv3_sd">
+					<img class="im3" src="/assets/images/eklesia.webp" alt="eklesia" />
+					<h2 class="tt3_sd">Eklesia Kerigma</h2>
+					<p class="p3">
+						Developed to support the ministry of a Brazilian pastor working in Paraguay, the Eklesia Kerigma website has the mission of publicizing the activities of the local church, attracting donations and missionary support, as well as keeping the community informed about events and evangelistic actions in the region.
+					</p>
+					<a class="lk3" href="https://eklesiakerigma.com/" target="_blank">Site Eklesia Kerigma</a>
+				</div>
+				<div class="dv3_sd">
+					<img class="im3" src="/assets/images/amtruck.webp" alt="amtruck" />
+					<h2 class="tt3_sd">AMTruck</h2>
+					<p class="p3">
+						Website renewal project for AMTRUCK, a company specializing in towing and vehicle assistance services. The new version features a modern and dynamic visual identity, focusing on usability and clarity of information, providing a more efficient experience for those seeking fast and reliable service.
+					</p>
+					<a class="lk3" href="https://amtruck.com.br/" target="_blank">Site AMTruck</a>
+				</div>
+			</div>
+		</section>
+		<section class="sc4">
+			<div class="dv4_ft">
+				<img class="im4" src="/assets/images/me.webp" alt="me" />
+				<div class="dv4_sd">
+					<h2 class="tt4">Elias Yuri Yoshi Miyashiro</h2>
+					<h2 class="tt41">Full-time Web, Front-End and Mobile Developer</h2>
+					<p class="tx4">Knowledge: JavaScript, HTML, CSS, React, Python, C#, PHP, SQL, Jquery, Bootstrap,
+						AOS, Node.js, Git, Github, Tailwind, Cloudflare, Firebase, Locaweb, AWS, Netlify, DNS, SSL, Domain,
+						Pycharm, Flask, Flask_Cors, Email-Mime, GDScript e Godot.</p>
+					<a href="tel:+5511949147702" class="tx41">To connect: +55 (11) 9 4914-7702</a>
+					<div class="dv4_td">
+						<a class="lk4" href="https://www.instagram.com/yuriyoshimiyashiro/" target="_blank">
+							<img class="im41" src="/assets/images/botoes/instagram.svg" />
+						</a>
+						<a class="lk4" href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20orçar%20o%20meu%20site?" target="_blank">
+							<img class="im41" src="/assets/images/botoes/whatsapp.svg" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer></footer>
-	<script src="../../assets/js/particles.js"></script>
-	<script src="../../assets/js/app.js"></script>
+	<script src="/assets/js/particles.js"></script>
+	<script src="/assets/js/app.js"></script>
 </body>
 
 </html>

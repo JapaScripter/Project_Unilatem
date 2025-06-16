@@ -1,3 +1,5 @@
+import '../css/style.css';
+
 document.addEventListener('DOMContentLoaded', function () {
 	var menuList = document.getElementById('lsm');
 	menuList.style.display = 'none';

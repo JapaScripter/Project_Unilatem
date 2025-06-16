@@ -5,10 +5,10 @@
 	<!--|Meta Config.|-->
 	<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0" />
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
-	<meta name="description" content="Unique" />
-	<meta name="author" content="Unique" />
+	<meta name="description" content="Unique/Unilatem" />
+	<meta name="author" content="Unique/Unilatem" />
 	<link rel="shortcut icon" href="../assets/images/logos/favicon.ico" />
-	<title>Unique | Termos de Uso</title>
+	<title>Unique/Unilatem | Termos de Uso</title>
 	<!--|Meta Config.|-->
 
 	<!--|Import|-->
@@ -16,74 +16,59 @@
 	<script rel="text/javascript" src="../assets/js/script.js"></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/
-		});
-	</script>
-	<script>
-		fetch("../components/header.html")
-			.then((e) => e.text())
-			.then((e) => {
-				document.querySelector("header").innerHTML = e;
-			}),
-			fetch("../components/footer.html")
-				.then((e) => e.text())
-				.then((e) => {
-					document.querySelector("footer").innerHTML = e;
-				});
-	</script>
+	<script>document.addEventListener("DOMContentLoaded", function () { AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/ });</script>
+	<script>fetch("../components/header.html").then((e => e.text())).then((e => { document.querySelector("header").innerHTML = e })), fetch("../components/footer.html").then((e => e.text())).then((e => { document.querySelector("footer").innerHTML = e })); const trySetYear = () => { const spanAno = document.getElementById('ano-atual'); if (spanAno) { spanAno.textContent = new Date().getFullYear(); } else { setTimeout(trySetYear, 50); } }; trySetYear();</script>
 	<!--|Import|-->
 </head>
 
 <body>
 	<header></header>
-
-	<!-- particles.js container -->
-	<div id="particles-js"></div>
-
-	<section id="sectm">
-		<h1 class="tttm">
-			Termos de Uso<img class="imtm" src="../assets/images/botoes/termo.svg" />
-		</h1>
-		<div class="dvtm" alt="escudo com um usuário no meio">
-			<p class="txtm">
-				Bem-vindo a Unique! Ao acessar e utilizar nosso site, você concorda em
-				cumprir com os seguintes termos e condições:
-				<br /><br />
-				1. Uso do Site: A Unique é destinada para uso comercial e empresarial.
-				Você concorda em utilizar o site apenas para os fins previstos no
-				contexto de atividades comerciais.
-				<br /><br />
-				2. Conteúdo do Usuário: Ao contribuir com conteúdo para a Unique, você
-				concede permissão para que esse conteúdo seja utilizado pela
-				plataforma de acordo com nossos termos, principalmente no âmbito
-				comercial.
-				<br /><br />
-				3. Privacidade: Respeitamos a sua privacidade. Leia nossa política de
-				privacidade para entender como suas informações são coletadas,
-				utilizadas e protegidas.
-				<br /><br />
-				4. Propriedade Intelectual: Todo o conteúdo presente na Unique,
-				incluindo textos, imagens, vídeos e logotipos, é protegido por
-				direitos autorais e propriedade intelectual, especialmente no contexto
-				de uso comercial.
-				<br /><br />
-				5. Limitação de Responsabilidade: A Unique não se responsabiliza por
-				danos diretos, indiretos, incidentais, especiais ou consequenciais
-				resultantes do uso ou incapacidade de usar nosso site no contexto
-				comercial.
-				<br /><br />
-				6. Alterações nos Termos: Reservamos o direito de modificar estes
-				termos a qualquer momento. Recomendamos que você revise periodicamente
-				os termos de uso.
-				<br /><br />
-				Ao continuar a usar o site da Unique, você concorda com estes termos e
-				condições. Se tiver alguma dúvida sobre os termos de uso, entre em
-				contato conosco.
-			</p>
-		</div>
-	</section>
+	<main>
+		<!-- particles.js container -->
+		<div id="particles-js"></div>
+		<section id="sectm">
+			<h1 class="tttm">
+				Termos de Uso<img class="imtm" src="../assets/images/botoes/termo.svg" />
+			</h1>
+			<div class="dvtm" alt="escudo com um usuário no meio">
+				<p class="txtm">
+					Bem-vindo a Unique/Unilatem! Ao acessar e utilizar nosso site, você concorda em
+					cumprir com os seguintes termos e condições:
+					<br /><br />
+					1. Uso do Site: A Unique/Unilatem é destinada para uso comercial e empresarial.
+					Você concorda em utilizar o site apenas para os fins previstos no
+					contexto de atividades comerciais.
+					<br /><br />
+					2. Conteúdo do Usuário: Ao contribuir com conteúdo para a Unique/Unilatem, você
+					concede permissão para que esse conteúdo seja utilizado pela
+					plataforma de acordo com nossos termos, principalmente no âmbito
+					comercial.
+					<br /><br />
+					3. Privacidade: Respeitamos a sua privacidade. Leia nossa política de
+					privacidade para entender como suas informações são coletadas,
+					utilizadas e protegidas.
+					<br /><br />
+					4. Propriedade Intelectual: Todo o conteúdo presente na Unique/Unilatem,
+					incluindo textos, imagens, vídeos e logotipos, é protegido por
+					direitos autorais e propriedade intelectual, especialmente no contexto
+					de uso comercial.
+					<br /><br />
+					5. Limitação de Responsabilidade: A Unique/Unilatem não se responsabiliza por
+					danos diretos, indiretos, incidentais, especiais ou consequenciais
+					resultantes do uso ou incapacidade de usar nosso site no contexto
+					comercial.
+					<br /><br />
+					6. Alterações nos Termos: Reservamos o direito de modificar estes
+					termos a qualquer momento. Recomendamos que você revise periodicamente
+					os termos de uso.
+					<br /><br />
+					Ao continuar a usar o site da Unique/Unilatem, você concorda com estes termos e
+					condições. Se tiver alguma dúvida sobre os termos de uso, entre em
+					contato conosco.
+				</p>
+			</div>
+		</section>
+	</main>
 	<footer></footer>
 	<script src="../assets/js/particles.js"></script>
 	<script src="../assets/js/app.js"></script>
