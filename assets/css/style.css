@@ -83,7 +83,7 @@ canvas {
   height: 6vw;
   justify-content: space-between;
   align-items: center;
-  background: #6705ad;
+  background: rgba(103, 5, 173, 0.5);
   z-index: 100;
 }
 
@@ -136,10 +136,6 @@ canvas {
   border: solid 0.1vw transparent;
 }
 
-.ls_nv:hover .ls_im {
-  background: #8906e6;
-}
-
 .ls_nv:hover {
   background: #8906e6;
   border: solid 0.1vw #f0f0f0;
@@ -189,7 +185,7 @@ canvas {
   width: 8vw;
   height: 20vw;
   top: 5vw;
-  background: rgba(103, 5, 173, 0.95);
+  background: rgba(103, 5, 173, 0.5);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1vw;
 }
@@ -217,7 +213,7 @@ canvas {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #6705ad;
+  background: rgba(103, 5, 173, 0.5);
 }
 
 #ano-atual {
@@ -277,9 +273,7 @@ canvas {
 
 .ft_im {
   width: 2vw;
-  margin: 0 1vw;
   padding: 0.5vw;
-  background: #6705ad;
   border-radius: 100%;
 }
 
