@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "high";
+  src: url("/font/high/htish_smooth.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "apple";
+  src: url("/font/apple/AppleGaramond-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  font-family: "apple";
+}
+
+.font-high {
+  font-family: "high";
+  letter-spacing: 0.5vw;
+}
+
+.font-apple {
+  font-family: "apple";
+  letter-spacing: 0.5vw;
+}
+
+.bg-gr-white-white {
+  background: linear-gradient(
+    to right,
+    rgba(240, 240, 240, 1),
+    rgba(240, 240, 240, 0.5),
+    rgba(240, 240, 240, 0)
+  );
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  width: 25vw;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(103, 5, 173, 1) 50%,
+    rgba(103, 5, 173, 0.5) 80%,
+    rgba(103, 5, 173, 0) 100%
+  );
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  top: 0;
+  left: 0;
+}
