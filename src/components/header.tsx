@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from 'react-i18next';
+import "@i18n/client";
 
 const Header: React.FC = () => {
 	const { t, i18n } = useTranslation();

@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
+import "@i18n/client";
 
 export default function Sobre() {
 	const { t, i18n } = useTranslation();

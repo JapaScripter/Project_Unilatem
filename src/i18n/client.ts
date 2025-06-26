@@ -1,28 +1,25 @@
-"use client"; // 👈 garante que será só no cliente
+"use client";
 
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import HttpBackend from "i18next-http-backend";
-import LanguageDetector from "i18next-browser-languagedetector";
 
-i18n
-  .use(HttpBackend)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    supportedLngs: ["pt", "en", "es"],
-    fallbackLng: "pt",
-    debug: false,
-    backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+import pt from "../../public/locales/pt/translation.json";
+import en from "../../public/locales/en/translation.json";
+import es from "../../public/locales/es/translation.json";
+
+if (!i18n.isInitialized) {
+  i18n.use(initReactI18next).init({
+    resources: {
+      pt: { translation: pt },
+      en: { translation: en },
+      es: { translation: es },
     },
+    lng: "pt",
+    fallbackLng: "pt",
     interpolation: {
       escapeValue: false,
     },
-    detection: {
-      order: ["localStorage", "navigator"],
-      caches: ["localStorage"],
-    },
   });
+}
 
 export default i18n;

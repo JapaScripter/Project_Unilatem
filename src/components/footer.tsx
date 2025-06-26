@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import "@i18n/client";
 
 const Footer: React.FC = () => {
 	const { t, i18n } = useTranslation();

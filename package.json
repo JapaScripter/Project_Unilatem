@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "postbuild": "netlify build",
+    "dev": "next dev",
+    "build": "NEXT_BUILD_LOG_MAX_MS=5000 next build",
+    "postbuild": "netlify deploy --build",
     "start": "next start",
     "lint": "next lint"
   },
