@@ -4,4 +4,4 @@
   environment = { NEXT_TELEMETRY_DISABLED = "1" }
 
 [[plugins]]
-  package = "@netlify/next"
+  package = "@netlify/plugin-nextjs"
