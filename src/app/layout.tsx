@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Unique é único",
   description: "Unique é o site dos sites",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.ico",
   },
 };
 
