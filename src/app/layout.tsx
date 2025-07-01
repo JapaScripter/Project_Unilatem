@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Unique é único",
   description: "Unique é o site dos sites",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

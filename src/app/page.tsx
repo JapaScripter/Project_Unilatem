@@ -77,28 +77,28 @@ export default function Home() {
 							img: "/img/salusvita.webp",
 							alt: "salusvita",
 							link: "https://www.salusvita.com.br/",
-							text: t('Site desenvolvido para promover a presença digital da Salusvita, empresa especializada em segurança do trabalho.A proposta foi criar uma plataforma funcional e confiável, que transmitisse autoridade no segmento e facilitasse a apresentação dos serviços oferecidos, além de incentivar o contato direto com clientes em potencial.'),
+							text: t('Site desenvolvido para promover a presença digital da Salusvita, empresa especializada em segurança do trabalho. A proposta foi criar uma plataforma funcional e confiável, que transmitisse autoridade no segmento e facilitasse a apresentação dos serviços oferecidos, além de incentivar o contato direto com clientes em potencial.'),
 							label: t('Conheça o Projeto'),
 						},
 						{
 							img: "/img/maite.webp",
 							alt: "maite",
 							link: "https://maitesquadrias.com.br/",
-							text: t('Plataforma criada com o objetivo de conectar a Maite Esquadrias a seu público- alvo de forma prática e eficiente.O site permite que os usuários conheçam os produtos e solicitem orçamentos personalizados de esquadrias de alumínio sob medida.A experiência do usuário foi priorizada, com navegação intuitiva e design limpo.'),
+							text: t('Plataforma criada com o objetivo de conectar a Maite Esquadrias a seu público-alvo de forma prática e eficiente. O site permite que os usuários conheçam os produtos e solicitem orçamentos personalizados de esquadrias de alumínio sob medida. A experiência do usuário foi priorizada, com navegação intuitiva e design limpo.'),
 							label: t('Conheça o Projeto'),
 						},
 						{
 							img: "/img/apav.webp",
 							alt: "apav",
 							link: "https://apav.netlify.app/",
-							text: t('Desenvolvido para dar visibilidade ao projeto missionário cristão da APAV, o site apresenta a atuação da associação na evangelização no Brasil e em países da América Latina.A estrutura foi pensada para inspirar, mobilizar novos membros e apoiadores, além de divulgar eventos, testemunhos e conteúdos edificantes.'),
+							text: t('Desenvolvido para dar visibilidade ao projeto missionário cristão da APAV, o site apresenta a atuação da associação na evangelização no Brasil e em países da América Latina. A estrutura foi pensada para inspirar, mobilizar novos membros e apoiadores, além de divulgar eventos, testemunhos e conteúdos edificantes.'),
 							label: t('Conheça o Projeto'),
 						},
 						{
 							img: "/img/porele.webp",
 							alt: "porele",
 							link: "https://porele.netlify.app/",
-							text: t('Site institucional criado para uma igreja cristã com o propósito de fortalecer sua identidade online e ampliar os canais de comunicação com os fiéis.Além de transmitir confiança e compromisso com a fé, a plataforma oferece meios acessíveis para contribuições, informações sobre cultos e projetos sociais.'),
+							text: t('Site institucional criado para uma igreja cristã com o propósito de fortalecer sua identidade online e ampliar os canais de comunicação com os fiéis. Além de transmitir confiança e compromisso com a fé, a plataforma oferece meios acessíveis para contribuições, informações sobre cultos e projetos sociais.'),
 							label: t('Conheça o Projeto'),
 						},
 						{
@@ -112,7 +112,7 @@ export default function Home() {
 							img: "/img/amtruck.webp",
 							alt: "amtruck",
 							link: "https://amtruck.com.br/",
-							text: t('Projeto de renovação do site da AMTRUCK, empresa especializada em serviços de guincho e assistência veicular.A nova versão apresenta uma identidade visual moderna e dinâmica, com foco na usabilidade e na clareza das informações, proporcionando uma experiência mais eficiente para quem busca atendimento rápido e confiável.'),
+							text: t('Projeto de renovação do site da AMTRUCK em parceria com Aragão Estratégia e Marketing, empresa especializada em serviços de guincho e assistência veicular. A nova versão apresenta uma identidade visual moderna e dinâmica, com foco na usabilidade e na clareza das informações, proporcionando uma experiência mais eficiente para quem busca atendimento rápido e confiável.'),
 							label: t('Conheça o Projeto'),
 							customImg: true,
 						},
@@ -146,13 +146,10 @@ export default function Home() {
 						{t('Segue nas redes sociais')}
 					</p>
 					<div className="grid grid-cols-3 w-full gap-4">
-						<a href="">
+						<a href="https://www.instagram.com/yuriyoshimiyashiro/" target="_blank">
 							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/instagram_b.svg" />
 						</a>
-						<a href="">
-							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/linkedin_b.svg" />
-						</a>
-						<a href="">
+						<a href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20orçar%20o%20meu%20site?" target="_blank">
 							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/whats_b.svg" />
 						</a>
 					</div>

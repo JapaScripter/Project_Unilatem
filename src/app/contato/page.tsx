@@ -26,13 +26,10 @@ export default function Contato() {
 						{t('Segue nas redes sociais')}
 					</p>
 					<div className="grid grid-cols-3 w-full gap-4">
-						<a href="">
+						<a href="https://www.instagram.com/yuriyoshimiyashiro/" target="_blank">
 							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/instagram_b.svg" />
 						</a>
-						<a href="">
-							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/linkedin_b.svg" />
-						</a>
-						<a href="">
+						<a href="https://api.whatsapp.com/send?phone=5511949147702&text=Olá!%20Gostaria%20de%20orçar%20o%20meu%20site?" target="_blank">
 							<img className="w-15 lg:w-15 p-1 hover:bg-[#8906E6] rounded-full border-solid active:border-1 active:border-[#F0F0F0]" src="/img/botoes/whats_b.svg" />
 						</a>
 					</div>

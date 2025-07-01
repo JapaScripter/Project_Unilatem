@@ -44,22 +44,22 @@ export default function Sobre() {
 	};
 
 	const skills = [
-		{ name: "JavaScript", img: "img/languages/js.svg", percent: parseFloat(((6 / 6) * 100).toFixed(2)) },
+		{ name: "JavaScript", img: "img/languages/js.svg", percent: parseFloat(((5 / 6) * 100).toFixed(2)) },
 		{ name: "HTML", img: "img/languages/html.svg", percent: parseFloat(((5 / 6) * 100).toFixed(2)) },
 		{ name: "CSS", img: "img/languages/css.svg", percent: parseFloat(((5 / 6) * 100).toFixed(2)) },
-		{ name: "Netlify", img: "img/languages/netlify.svg", percent: parseFloat(((6 / 6) * 100).toFixed(2)) },
+		{ name: "Netlify", img: "img/languages/netlify.svg", percent: parseFloat(((5 / 6) * 100).toFixed(2)) },
 
-		{ name: "Bootstrap", img: "img/languages/bootstrap.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
-		{ name: "Tailwind", img: "img/languages/tailwind.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
-		{ name: "MySql", img: "img/languages/mysql.svg", percent: parseFloat(((0 / 6) * 100).toFixed(2)) },
-		{ name: "React", img: "img/languages/react.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
+		{ name: "Bootstrap", img: "img/languages/bootstrap.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
+		{ name: "Tailwind", img: "img/languages/tailwind.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
+		{ name: "MySql", img: "img/languages/mysql.svg", percent: parseFloat(((5 / 6) * 100).toFixed(2)) },
+		{ name: "React", img: "img/languages/react.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
 
-		{ name: "TypeScript", img: "img/languages/tsx.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
-		{ name: "Next.js", img: "img/languages/nextjs.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
-		{ name: "C#", img: "img/languages/c.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
-		{ name: "Locaweb", img: "img/languages/locaweb.svg", percent: parseFloat(((2 / 6) * 100).toFixed(2)) },
+		{ name: "TypeScript", img: "img/languages/tsx.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
+		{ name: "Next.js", img: "img/languages/nextjs.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
+		{ name: "C#", img: "img/languages/c.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
+		{ name: "Locaweb", img: "img/languages/locaweb.svg", percent: parseFloat(((3 / 6) * 100).toFixed(2)) },
 
-		{ name: "React Native", img: "img/languages/reactnative.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
+		{ name: "React Native", img: "img/languages/reactnative.svg", percent: parseFloat(((2 / 6) * 100).toFixed(2)) },
 		{ name: "Python", img: "img/languages/python.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
 		{ name: "Firebase", img: "img/languages/firebase.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
 		{ name: "AWS", img: "img/languages/aws.svg", percent: parseFloat(((1 / 6) * 100).toFixed(2)) },
