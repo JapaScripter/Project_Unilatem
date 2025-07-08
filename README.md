@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="/public/img/logos/unique.webp" alt="Logo da UNIQUE/UNILATEM" width="200" />
+</p>
 
-## Getting Started
+<h1 align="center">Site UNIQUE / UNILATEM</h1>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✨ Sobre o projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este site foi desenvolvido para apresentar de forma clara e profissional a **UNIQUE/UNILATEM**, empresa que atua com excelência em serviços e soluções especializadas, consolidando-se como referência em seu setor de atuação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A plataforma tem como objetivo:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Apresentar a história, missão e áreas de atuação da empresa;
+- Destacar os diferenciais e a qualidade dos serviços prestados;
+- Facilitar o contato com clientes, parceiros e interessados;
+- Reforçar a imagem sólida, moderna e confiável da UNIQUE/UNILATEM.
 
-## Learn More
+Com uma interface intuitiva e responsiva, o site foi pensado para entregar uma navegação eficiente, transmitindo o profissionalismo e a inovação que fazem parte da identidade da empresa.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠️ Tecnologias e ferramentas utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **HTML5 & CSS3** – Estrutura e visual do site  
+- **JavaScript (Vanilla)** – Funcionalidades e interatividade  
+- **AOS (Animate On Scroll)** – Animações suaves ao rolar a página  
+- **Google Maps Embed API** – Localização precisa da empresa  
+- **WhatsApp API (click-to-chat)** – Canal direto de atendimento via WhatsApp  
+- **Netlify** – Deploy contínuo e hospedagem moderna  
+- **Netlify.toml** – Configurações personalizadas de redirecionamento e URLs amigáveis  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📌 Observações
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Caso você queira contribuir, relatar algum problema ou sugerir melhorias, fique à vontade para abrir uma issue ou pull request neste repositório.
+
+---
+
+### 🤝 Agradecimentos
+
+Agradecemos a todos que confiam na **UNIQUE/UNILATEM** e ajudam a construir uma trajetória sólida baseada em comprometimento, inovação e resultados.
+
+> "UNIQUE/UNILATEM — excelência que transforma."
+
