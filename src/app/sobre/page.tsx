@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import "@i18n/client";
+import Link from "next/link";
 
 export default function Sobre() {
 	const { t, i18n } = useTranslation();
@@ -75,6 +76,11 @@ export default function Sobre() {
 						{t('Oi, eu sou Elias Yuri Yoshi Miyashiro')}
 					</h2>
 					<p className={`w-3/4 h-1 font-apple text-xs lg:text-xl text-[#6705AD] transition-opacity duration-700 ease-in-out ${fade ? 'opacity-100' : 'opacity-0'}`}>{frases[indexFrase]}</p>
+					<a href='/experiencia' className="relative top-20 lg:top-30 px-8 py-4 bg-[#6705AD] text-[#F0F0F0] font-bold rounded-full hover:bg-[#8906E6] transition-colors duration-300 cursor-pointer" >
+						<button className="flex items-center gap-2 cursor-pointer">
+							{t('Ver Experiências')}
+						</button>
+					</a>
 				</div>
 			</section>
 			<section className="relative flex flex-col w-full h-100 justify-evenly bg-[#6705AD]">

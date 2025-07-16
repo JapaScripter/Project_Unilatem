@@ -1,4 +1,4 @@
-// File: /home/xuwe/Documents/Projects/Project_Unilatem/src/app/layout.tsx
+// File: /home/xuwe/Archives/Projects/Project_Unilatem/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

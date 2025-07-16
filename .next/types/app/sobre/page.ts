@@ -1,4 +1,4 @@
-// File: /home/xuwe/Documents/Projects/Project_Unilatem/src/app/sobre/page.tsx
+// File: /home/xuwe/Archives/Projects/Project_Unilatem/src/app/sobre/page.tsx
 import * as entry from '../../../../src/app/sobre/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,6 +1,5 @@
 {
-  "/politica/page": "app/politica/page.js",
-  "/termo/page": "app/termo/page.js",
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/experiencia/page": "app/experiencia/page.js",
   "/sobre/page": "app/sobre/page.js"
 }
